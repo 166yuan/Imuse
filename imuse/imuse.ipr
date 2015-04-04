@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="CopyrightManager" default="" />
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="JRebel Project data">
+    <option name="privateKey" value="3082025d02010002818100d7da1ee767edf20950fdfbad7e7d05e312102604b35c5a165c213318386441ce4a105875a6f1bcc149aebce1cea49906a421df20343643c617020e4bfea414f6dabc2740ac2d9f27cf1424fb98c0c8368e89dfbf108c7a3815e07cae5d3626e400f2f9379084a2282f601ab2e57e606a0dceb25e20e23dcd49d4869c26e4c42d020301000102818100b3ea694bf4c2ceb5993eba62f845797cb577a458d2afad9f69977aa13b8fc5920f05e4d5dc1b2e7be5d0b23b7d24913089ea79b2bc1267175be228cc8b2975166ca6f9047fee565174f17d121eda10e9bdf136d8354c7da3551e590ddaf59401aee724f94bf5ac89e62a69c536e4e7510c440ecc5e14c20c590ac388966212b9024100fb58afb7ee060453c16797982b2e9b7ba9b059b0a2e90cbfcc5efb5d0d7b824f941dc028129111b7018e5ce6e05f46b51d0692bbc3ed5f2a49f0c1db9f58c983024100dbd93357065e5014bd1e99ccc29c1a05d5c612446576463a077e9baeb3c4953b05d98b5a139a5057e5acd9aa0324ad1f7228b705aa0158240eeb246c6d70bc8f024078e28ea0c7b9dd1aeb4a077f0845c24217bad9683af21b4fa3db8ac9965270ba1562b9a88c45795fab3fed2e9d7b3566a62f23236b781eed17e2d359eda9a641024100ac89f81af26a8e5ad859edc69f6d379720c104911d3807c17f24443685eb605b242a298d9618e3b9380dc1fe05dd80e94f04d92edecf934729562e0dd28e49cd024024b4763e6f7eee1d8d6fccd5e99cfe77ddedb6961febe777365b26db9d85cc275f8ea164e185682492c48374032d771768f5432b7c0c2495d2bfbeba3478f4b0" />
+    <option name="publicKey" value="30818902818100d7da1ee767edf20950fdfbad7e7d05e312102604b35c5a165c213318386441ce4a105875a6f1bcc149aebce1cea49906a421df20343643c617020e4bfea414f6dabc2740ac2d9f27cf1424fb98c0c8368e89dfbf108c7a3815e07cae5d3626e400f2f9379084a2282f601ab2e57e606a0dceb25e20e23dcd49d4869c26e4c42d0203010001" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/imuse.iml" filepath="$PROJECT_DIR$/imuse.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" default="false" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/tmp/classes" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/modules/godteam-play" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/modules/godteam-play-aliyun" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/modules/godteam-play-openid" vcs="svn" />
+  </component>
+</project>
