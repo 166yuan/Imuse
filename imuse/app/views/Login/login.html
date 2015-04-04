@@ -1,0 +1,109 @@
+<html>
+<head>
+	<title>imuse主页</title>
+	<meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/reset.css'}/>
+  <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/header.css'} />
+  <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/index.css'} />
+  <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/footer.css'} />
+  <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/color.css'} />
+	<link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/font.css'} />
+  <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/login.css'}>
+</head>
+<body>
+<div class="all">
+  <div class="header_container">
+    <div class="header">
+    	<div class="header_logo"><img src="@{'/public/images/index/iMuseLogo.png'}/></div>
+      <div class="header_nav">
+        <ul>
+          <li><a title="index" href="index.html">HOME</a></li>
+          <li><a title="music" href="#">i榜单</a></li>
+          <li><a title="music" href="#">i音乐</a></li>
+          <li><a title="music" href="#">iNews</a></li>
+          <li><a title="music" href="#">创作</a></li>
+          <li><a title="music" href="#">教程</a></li>
+        </ul>
+      </div>
+    	<div class="header_service">
+    		<ul>
+                <li class="header_service_item"><a href="#"><img src="images/index/icon_my_music.png" /><span>我的音乐</span></a></li>
+    			<li class="header_service_item"><a href="#"><img src="images/index/icon_idea_zone.png" /><span>灵感空间</span></a></li>
+    		<li class="header_service_item"><a href="#"><img src="images/index/icon_my_homepage.png" /><span>我的空间</span></a></li>
+    			<li class="header_service_item">
+    				<ul>
+    					<li><a class="fa fa-twitter" href="#"></a><a class="fa fa-facebook" href="#"></a></li>
+    					<li><a class="fa fa-google" href="#"></a><a class="fa fa-instagram" href="#"></a></li>
+    				</ul>
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+    <!-- end header -->
+  </div>
+  <!-- end header_container -->
+  <div id="login-redbg">
+    <div id="login-whitebg">
+      <div id="login-box">
+        <div id="login-rbox-bg">
+        </div>
+        <!-- end login-rbox-bg -->
+        <div id="login-rbox">
+              <div id="login-prompt">
+                <p id="login-p-up">iMuse账号登录</p>
+                <p id="login-p-botton">为了您更好的音乐体验</p>
+              </div>
+              <form action="#" method="post" id="loginFrom" name="loginfrom" onsubmit="return Checkout(document.loginfrom)">
+                <div class="login-text-box" id="login-username">
+                  <label for="login-username-text" id="login-username-laber" ></label>
+                  <input name="username" class="login-text-input" type="text" value="" autocomplete="off">
+                </div>
+                <div class="login-text-box" id="login-password">
+                  <label for="login-password-text" id="login-password-label"></label>
+                  <input name="password" class="login-text-input" type="password" value="" autocomplete="off">
+                </div>
+                <div class="login-buttons-box" id="login-signin">
+                  <button type="submint" id="login-sign-button" >登录</button>
+                </div>
+                <div class="login-buttons-box" id="login-register">
+                  <input type="button" id="login-register-button" value="注册" onclick="window.location.href('#')">
+                </div>
+              </form>
+              <div id="login-other-box">
+                <ul id="login-other-list">
+                  <li id="login-weibo-li">
+                    <a href="#" class="login-other-href">
+                          <img src="images/login/weibo.png" alt="qq">
+                          <div id="login-weibobox">微博登录</div> 
+                    </a>
+                  </li>
+                  <li id="login-qq-li">
+                    <a href="#" class="login-other-href">
+                          <img src="images/login/qq.png" alt="qq">
+                          <div id="login-qqbox">QQ登陆</div>
+                    </a>
+                  </li>
+                  <li id="login-more-li">
+                    <a href="#" class="login-other-href" id="login-more-href">
+                      <div id="login-morebox">更多</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+        <!-- end login-rbox -->
+      </div>
+      <!-- end login-box -->      
+    </div>
+    <!-- end login-whitebg -->
+  </div>
+  <!-- end login-redbg -->
+</div>
+<!-- end all -->
+<script type="text/javascript" src="js/jquery.1.10.2.js"></script>
+<script type="text/javascript" src="js/include.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/login_checkout.js"></script>                            
+</body>
+</html>

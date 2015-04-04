@@ -1,0 +1,79 @@
+.content_title_nomarginbotom{
+  padding-bottom: 0;
+}
+.content_ablums_container,.band_logo_container,.content_singer_gallery_container{
+  width: 960px;
+  margin: 0 auto;
+}
+.content_ablums{
+  width: 960px;
+  margin: 0 auto;
+  height: 220px;
+}
+.content_ablum_item{
+  width: 160px;
+  height: 220px;
+  text-align: left;
+  float: left;
+  margin-left: 40px;
+
+}
+.content_ablum_item_title{
+  color: #4d3636;
+  font-size: 14px;
+  margin: 20px 0;
+
+}
+.content_ablum_item_star{
+  color: #384f90;
+  margin-bottom: 10px;
+  line-height: 20px;
+  font-size: 12px;
+
+}
+.content_ablum_item_star span{
+font-size: 18px;
+color: #4d3636;
+font-family: "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", Georgia, "Times New Roman", serif;
+margin-left: 20px;
+line-height: 20px;
+}
+.content_ablum_item_date
+{
+  color:#999999;
+  font-size: 12px;
+}
+.content_ablum_item_img{
+  background-color: black;
+  width: 160px;
+  height: 140px;
+  background: url(../images/singer//ablum_bg.png) center no-repeat;
+  position: relative;
+}
+
+.content_ablum_item_img img{
+  position: absolute;
+  left: 20px;
+  top: 2px;
+  width: 138px;
+  height: 135px;
+}
+ul.content_ablums > li:first-child{
+  margin-left: 0 !important;
+}
+.content_band_logo{
+  background: url(../images/singer/band_logo.png) center no-repeat;
+  width: 300px;
+  height: 77px;
+  margin-top: 70px;
+}
+.content_band_gallery{
+width: 960px;
+position: relative;
+margin: 0 auto;
+height: 300px;
+}
+.content_band_gallery img{
+  position: absolute;
+  display: block;
+}

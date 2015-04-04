@@ -1,0 +1,43 @@
+#{extends 'mana-main.html' /}
+#{ set userManageActive :"active" /}
+	<form class="form-search" method="post" action="@{ApplicationManager.searchUserForUserlist}">
+  <div class="input-append userlistsearch">
+    <input type="text" class="span2 search-query" placeholder= "输入用户名" name="nickname">
+    <button type="submit" class="btn btn-primary">用户名搜索</button>
+  </div>
+</form>
+#{if userList}
+<table class="table table-hover table-bordered">
+	<tr>
+		<th width="20%">用户名</th>
+		<th width="20%">email</th>
+		<th>简介</th>
+		<th width="8%">是否歌手</th>
+		<th width="12%">创建时间</th>
+		<th width="10%">重置密码</th>
+	</tr>
+	#{list userList, as:'item'}
+	<tr>
+		<td>${item.nickname}</td>
+		<td>${item.email}</td>
+		<td>${item.intro}</td>
+		#{if item.role ==1}
+		<td>是</td>
+		#{/if}
+		#{else}
+		<td>否</td>
+		#{/else}
+		<td>${new Date(item.createTime).simpleDateTime()}</td>
+		<td><a class="btn btn-primary" href = "@{ApplicationManager.reSetPassword(item.id)}">重置密码</a></td>
+
+
+
+
+	</tr>
+	#{/list}
+</table>
+#{page pageBean: pageBean, params : params/}
+#{/if}
+#{else}
+<div class="alert alert-error span6">没有符合条件的用户</div>
+#{/else}

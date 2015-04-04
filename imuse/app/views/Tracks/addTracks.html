@@ -1,0 +1,21 @@
+#{extends 'mana-main.html' /}
+#{set title:'上传音乐' /}
+<div class="row-fluid">
+#{include 'Tracks/track_option.html' /}
+<div class="span9">
+<form role="form" action="@{Tracks.upload(music,lyrics,0,"21231")}" method="post" enctype="multipart/form-data">
+   <div class="form-group">
+      <label for="uploadMusic">选择歌曲上传</label>
+      <input   input type="file" id="uploadMusic" name="music" multiple='multiple' accept='audio/mpeg,application/ogg, audio/ogg'>
+      <p class="help-block">支持mp3 、ogg文件</p>
+      <br/>
+      <label for="uploadLyrics">选择歌词上传</label>
+      <input   input type="file" id="uploadLyrics" name="lyrics" accept="*.lrc">
+      <p class="help-block">支持lrc文件</p>
+   </div>
+   <div class="checkbox">
+   </div>
+   <button type="submit" class="btn btn-success">提交</button>
+</form>
+</div>
+</div>

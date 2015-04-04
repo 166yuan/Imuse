@@ -1,0 +1,144 @@
+/*模板*/
+/*position*/
+/*appearence*/
+/*background*/
+/*comon font*/
+.common-font-edit{
+	font-size: 12px;
+	color: #b5b5b5;
+	font-weight: 400;
+}
+.common-color-bg{
+	background-color: #f0eae1;
+}
+
+.myspace-ways{
+	/*position*/
+	margin-left: 50px;
+	/*appearence*/
+	font-size: 14px;
+	color:#cccccc;
+	/*background*/
+	background: url(../images/myspace_index/icon_edit.png) top left no-repeat;
+	padding-left: 23px;
+}
+.myspace-ways a{
+	/*position*/
+	
+	/*appearence*/
+	font-size: 14px;
+	color:#cccccc;
+	/*background*/
+}
+.content_title_top100_logo {
+background: url(../images/myspace_index/icon_upload.png) no-repeat center;
+}
+.js-hidden{
+	visibility: hidden;
+}
+.content_top100_item_edit,.content_top100_item_delete{
+	/*position*/
+	display: block;
+	width: 20px;
+	height: 50px;
+	margin-right:30px;
+	/*appearence*/
+	/*background*/
+	
+}
+.content_top100_item_edit{
+	margin-left: 70px;
+	background: url(../images/myspace_index/icon_edit_blue.png) center center no-repeat;
+}
+.content_top100_item_delete{
+	background: url(../images/myspace_index/icon_delete.png) center center no-repeat;
+}
+.content_title_top100_logo{
+	width: 20px;
+	height: 20px;
+}
+.content_top100_item_num input{
+	margin: 0 0 0 0;
+	color: white;
+}
+.content_ablum_item_do{
+	height: 20px;
+}
+.content_ablum_item_do a{
+	line-height: 20px;
+	height: 20px;
+	display: block;
+	float: left;
+	margin-bottom: 10px;
+}
+.content_ablum_item_do_edit,.content_ablum_item_do_delete{
+	padding-left: 28px;
+}
+.content_ablum_item_do_edit{
+	background: url(../images/myspace_index/icon_edit_blue.png) center left no-repeat;
+	margin-right: 28px;
+}
+.content_ablum_item_do_delete{
+	background: url(../images/myspace_index/icon_delete.png) center left no-repeat;
+}
+.content_ablums{
+	height: inherit;
+}
+.content_ablum_item{
+	height: inherit;
+}
+/*浮动后的自适应高度*/
+.clearfix:after {
+     content:".";
+     display:block;
+     height:0;
+     clear:both;
+     visibility:hidden;
+}
+.clearfix{display:inline-block;}
+/* Hide from IE Mac */
+.clearfix {display:block;}
+/* End hide from IE Mac */
+/* end of clearfix */
+.content_ablum_item{
+	margin-bottom: 70px;
+}
+.band_logo_container{
+	clear:both;
+}
+.content-band-edit{
+	display: block;
+	margin-top: 50px;
+	background: url(../images/myspace_index/icon_band_edit.png) center left no-repeat;
+	padding-left: 30px;
+}
+.content_singer_gallery_item{
+	margin-bottom: 30px;
+	margin-right:30px;
+	height: inherit;
+	overflow: hidden;
+	width: 300px;
+
+	box-shadow: 0px 10px 12px #dfd7cb;
+}
+.content-video-manager{
+	display: block;
+	width: 400%;
+	color:#384f90;
+	font-size: 14px;
+	line-height: 25px;
+}
+.content_singer_gallery_item img{
+	width: 100%;
+	height: 160px;
+	
+}
+.content-video-icon{
+	position: absolute;
+	right: 15px;
+	background: url(../images/myspace_index/icon_video.png) center left no-repeat;
+	padding-left: 30px;
+}
+.content-video-row div:last-child{
+	margin-right: 0px;
+}

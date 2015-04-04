@@ -1,0 +1,56 @@
+#{extends 'AlbumManager/index.html' /} 
+#{ set setByAlbum :"active" /}
+
+<span class="badge badge-info">点击图片进行查看</span>
+<br>
+<br>
+#{list items:albumlist, as:'album'}
+	#{if album_index%3 == 1}
+		<div class="row-fluid">
+  <div class="span4">
+		  	<a href="@{AlbumManager.editAlbum(album.id)}">
+		  		#{if album.imageUrl !=null}
+			 	<img class="img-circle" src="${album.imageUrl}" style="width: 120px; height: 120px;">
+                #{/if}
+                #{else}
+                <img class="img-circle" src="/public/images/album_sample.png" style="width: 120px; height: 120px;">
+                #{/else}
+                </a>                   
+              <h2>${album.name}</h2>
+              <small>${album.note}</small>
+ 
+            </div><!--/span-->
+	#{/if}
+	#{else}
+	#{if album_index%3 == 0}
+		  <div class="span4">
+		  	<a href="@{AlbumManager.editAlbum(album.id)}">
+			 	#{if album.imageUrl !=null}
+			 	<img class="img-circle" src="${album.imageUrl}" style="width: 120px; height: 120px;">
+                #{/if}
+                #{else}
+                <img class="img-circle" src="/public/images/album_sample.png" style="width: 120px; height: 120px;">
+                #{/else}    
+                </a>   
+              <h2>${album.name}</h2>
+              <small>${album.note}</small>  
+            </div><!--/span-->
+         </div>   
+	#{/if}
+	#{else}
+		  <div class="span4">
+		  	<a href="@{AlbumManager.editAlbum(album.id)}">
+			 	#{if album.imageUrl !=null}
+			 	<img class="img-circle" src="${album.imageUrl}" style="width: 120px; height: 120px;">
+                #{/if}
+                #{else}
+                <img class="img-circle" src="/public/images/album_sample.png" style="width: 120px; height: 120px;">
+                #{/else}
+                </a>       
+              <h2>${album.name}</h2>
+              <small>${album.note}</small>
+             
+            </div><!--/span-->
+	#{/else}
+	#{/else}
+#{/list}

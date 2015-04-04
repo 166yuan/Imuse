@@ -1,0 +1,10 @@
+
+<script id="pic_tpl" type="text/template">
+	{@if list.length == 0}
+	 <li class="banner_gallery_item"><a href="/Home/index"><img src="/public/images/index/banner_gallery1.png" alt="首页大图" /> </a></li>
+	{@else if list.length >0}
+	{@each list as it,index}
+	 <li class="banner_gallery_item"><a href="${it.link}"><img src=${it.url} alt="首页大图" /></a></li>
+	{@/each}
+	 {@/if}
+</script>

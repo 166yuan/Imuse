@@ -1,0 +1,42 @@
+#{extends 'ApplicationManager/base.html' /}
+
+<form class="bs-docs-example form-horizontal" action="@{Tracks.upload}" method="post"
+ enctype="multipart/form-data">
+	<fieldset>
+		<legend>歌曲上传</legend>
+		<div class="control-group">
+			<label class="control-label" for="password">请输入用户id</label>
+			<div class="controls">
+				<input type="text" id="id" name = "id"  required="required">
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="vaildword">选择种类</label>
+			<div class="controls">
+				<select name="TYPE">
+				<option value="0">用户</option>
+				<option value="1">乐队</option>
+				</select>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="vaildword">选择种类</label>
+			<div class="controls">
+				音乐<input type="file" name="music" id="music">
+				歌词<input type="file" name="lyrics" id ="music">
+			</div>
+		</div>
+
+		<div class="controls">
+
+			<button type="submit" class="btn btn-primary">设置</button>
+			<button type="reset" class="btn btn-primary">重置</button>
+		</div>
+	</fieldset>
+
+
+
+</form>
+
+
+

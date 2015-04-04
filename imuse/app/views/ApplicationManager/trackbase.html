@@ -1,0 +1,21 @@
+#{extends 'mana-main.html' /} #{set title:'Home' /}
+
+
+<div class="row">
+	<div class="span2">
+		<ul class="nav nav-pills nav-stacked nav-list mynav">
+			<li class="nav-header">个人歌曲管理</li>
+			<li class="#{get 'newMusic'/}"><a
+				href="@{tracks.showTrackByType(0,0,0)}">未通过歌曲申请</a></li>
+			<li class="#{get 'passMusic'/}"><a
+				href="@{tracks.showTrackByType(0,0,1)}">已通过歌曲申请</a></li>
+			<li class="nav-header">乐队歌曲管理</li>
+			<li class="#{get 'newBand'/}"><a
+				href="@{tracks.showTrackByType(1,0,0)}">未通过歌曲申请</a></li>
+			<li class="#{get 'passBand'/}"><a
+				href="@{tracks.showTrackByType(1,0,1)}">已通过歌曲申请</a></li>
+			
+		</ul>
+	</div>
+	<div class="span10">#{doLayout /}</div>
+</div>

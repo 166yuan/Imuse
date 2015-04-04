@@ -1,0 +1,32 @@
+#{extends 'mana-main.html' /}
+#{set title:'我的音乐' /}
+<div class="row-fluid">
+
+<table class="table table-hover table-bordered" >
+    <tr>
+		<th width="5%">歌曲名称</th>
+		<th width="10%">是否有歌词</th>
+		<th width="30%">添加/修改歌词</th>
+	</tr>
+	#{include 'Tracks/track_option.html' /}
+	<div class="span9">
+		 #{list trackList, as:'tracks'}
+		 	 <tr>
+		 	 <td>${tracks.name}</td>
+		 	 #{if tracks.lyricFile==null}
+		 	 <td>否</td>
+		 	 #{/if}
+		 	 #{else}
+			<td>是</td>
+			#{/else}
+			<td>
+			<form role="form" action="@{Tracks.upLoadLyricsByUserID(f,tracks.id,tracks.ownerId)}" method="post" enctype="multipart/form-data">
+      			<input   input type="file" id="uploadLyrics" name="f" accept="*.lrc">
+      			<button type="submit" class="btn btn-success">确定</button>
+			</form>
+			</td>
+		 	 </tr>
+		 #{/list}
+	</div>	
+</table>
+</div>

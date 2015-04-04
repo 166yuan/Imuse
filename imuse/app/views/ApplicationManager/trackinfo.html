@@ -1,0 +1,19 @@
+#{extends 'ApplicationManager/trackbase.html' /}
+#{ set newMusic:"active" /}
+#{ set trackActive:"active" /}
+<br>
+<br>
+
+<br>
+
+<p style="text-align: center">歌曲名:${trackbean.name}</p>
+<p style="text-align: center">拥有者:${trackbean.username}</p>
+<p style="text-align: center">所属专辑:${trackbean.albumName?trackbean.albumName:"无"}</p>
+<p style="text-align: center"><audio controls="controls" >
+  <source src="${trackbean.audioFile}" type="audio/mpeg">
+Your browser does not support the audio tag.
+</audio></p>
+
+
+
+

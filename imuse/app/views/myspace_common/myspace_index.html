@@ -1,0 +1,17 @@
+#{extends 'index_common/index_main.html' /}
+#{set title:'my_space' /}
+#{set 'moreStyles'}
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/singer_banner.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/singer_songs.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/singer_ablum.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/singer.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/myspace_index.css'}">
+#{/set}
+#{set 'moreScripts'}
+ <script src="@{'/public/javascripts/banner.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+  <script type="text/javascript">
+$(document).trigger("banner");
+ </script>
+ <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1406120293502607" charset="utf-8"></script>
+ #{/set}
+ #{include 'myspace_common/myspace_container.html'/}

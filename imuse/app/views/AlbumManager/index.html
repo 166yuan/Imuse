@@ -1,0 +1,40 @@
+#{extends 'mana-main.html' /} #{set title:'专辑设置' /}
+<div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">专辑管理</li>
+              <li class="#{get 'setByUser'/}">
+              	<a href="@{AlbumManager.setByUser(0)}">按用户查看</a>
+              	</li>
+              <li class="#{get 'setByAlbum'/}">
+              	<a href="@{AlbumManager.setByAlbum(0)}">按专辑查看</a>
+              </li>
+			  <li class="#{get 'addAlbum'/}">
+              	<a href="@{AlbumManager.addAlbum()}">添加专辑</a>
+              </li>
+            </ul>
+             <br>
+             <ul class="nav nav-list">
+              <li class="nav-header">专辑审核</li>
+              <li class="listAlbum">
+              	<a href="#">待审核专辑</a>
+              	</li>
+              <li class="acceptAlbum">
+              	<a href="#">已通过审核</a>
+              </li>
+              <li class="rejectAlbum">
+              	<a href="#">未通过审核</a>
+              </li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+         <div class="span9">
+        	<div class="hero-unit">
+            #{doLayout /}
+          </div>
+     		
+         </div>
+      </div>
+    </div>

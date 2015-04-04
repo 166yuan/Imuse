@@ -1,0 +1,188 @@
+#{extends 'Common/index_main.html' /}
+#{set title:'歌手主页' /}
+#{set 'moreStyles'}
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/singer_banner.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/singer_songs.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/singer_ablum.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/singer.css'}">
+#{/set}
+
+<!-- 加载tpl模板 start-->
+#{output 'singer_common/singer_tpl.html'/}
+#{output 'singer_common/singer_album_tpl.html'/}
+#{output 'singer_common/singer_photoTag_tpl.html'/}
+#{output 'singer_common/singer_info_tpl.html'/}
+<!-- 加载tpl模板 end-->
+#{set 'moreScripts'}
+<script type="text/javascript" src = "@{'/public/javascripts/juicer.js'}"></script>
+<!-- 加载全局内容  start 用到juicer所以放在它后面-->
+<!-- 加载全局内容  end-->
+<!-- 轮播大图 start-->
+#{include 'Common/golBal.html'/}
+ <script src="@{'/public/javascripts/banner.js'}" type="text/javascript"></script>
+ <!-- 轮播大图 end-->
+ <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1406120293502607" charset="utf-8"></script>
+<!-- ajax start-->
+ <script src="@{'/public/javascripts/singer_getData.js'}" type="text/javascript"></script>
+<!-- ajax end-->
+<script type="text/javascript">
+ $(document).trigger("banner");
+
+</script>
+#{/set}
+
+
+
+
+<div class="singer_banner">
+  <div class="singer_banner_main">
+
+    <div class="user_header_container">
+   <div class="user_header">
+      <p>上午好，<span>用户名123</span> 欢迎回来。</p>
+   </div><!-- end user_header -->
+  </div><!-- user_header_container -->
+
+<!-- 滚动屏 -->
+    <div class="banner_block_container">
+      <div class="banner_block">
+
+<!-- 滚动屏—搜索模块 -->
+      <div class="banner_search_block">
+        <ul>
+          <li><a class="bold" href="#">热门搜索：</a></li>
+          <li><a href="#">陈奕迅</a></li>
+          <li><a href="#">最炫民族风</a></li>
+          <li><a href="#">我是歌手</a></li>
+        </ul>
+        
+           <div class="banner_search_block_form">
+            <form action="@{Dev.testsinger}" method="post">
+        <input type="text" />
+            <label>请输入您要搜索的<span>歌名</span>或<span>歌手</span></label>
+        <button type="submit"></button>
+        </form>
+           </div> <!-- end  banner_search_block_form-->
+          
+      </div> <!-- end  banner_search_block-->
+
+<!-- 滚动屏——相册 -->
+      <div class="banner_gallery">
+        <div class="banner_introduce_block">     
+           <p class="collect_block" id ="singer_tpl">
+          <a class="collect" href="#"><img src="@{'/public/images/singer/icon_collect.png'}"/>&nbsp;&nbsp;收藏</a> <a class="collect" href="#"><img src="@{'/public/images/singer/icon_good.png'}"/>&nbsp;&nbsp;点赞</a>
+           </p>
+        <div class="share">
+              <!-- JiaThis Button BEGIN -->
+        <span>分享到：</span>
+       <div class="jiathis_style">
+          <a class="jiathis_button_qzone"></a>
+          <a class="jiathis_button_tsina"></a>
+          <a class="jiathis_button_tqq"></a>
+          <a class="jiathis_button_weixin"></a>
+          <a class="jiathis_button_renren"></a>
+          <a class="jiathis_button_xiaoyou"></a>
+          <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+          <a class="jiathis_counter_style"></a>
+        </div>
+             <!-- JiaThis Button END -->
+        </div><!-- end share -->
+      </div><!-- end banner_introduce_block -->
+       <div class="banner_block_gradient">
+      </div><!-- end banner_block_gradient -->
+
+       
+          <ul class="banner_gallery_pics">
+       <!-- 一个item代表一个大框 -->
+         <li class="banner_gallery_item" ><!-- 一个item -->
+          <img class="banner_gallery_item_img" src="@{'/public/images/band/band.png'}" />
+          </li><!-- end 一个item -->
+          <li class="banner_gallery_item" ><!-- 一个item -->
+          <img class="banner_gallery_item_img" src="@{'/public/images/index/banner_gallery2.png'}" />
+          </li><!-- end 一个item -->
+          <li class="banner_gallery_item" ><!-- 一个item -->
+          <img class="banner_gallery_item_img" src="@{'/public/images/index/banner_gallery3.png'}" />
+          </li><!-- end 一个item -->
+          <li class="banner_gallery_item" ><!-- 一个item -->
+          <img class="banner_gallery_item_img" src="@{'/public/images/index/banner_gallery4.png'}" />
+          </li><!-- end 一个item -->
+        </ul>
+
+
+
+         </div><!-- end banner_gallery -->
+      </div> <!-- end banner_block -->
+    </div> <!-- end banner_block_container -->
+   </div><!-- end singer_banner_main -->
+         
+         <div class="banner_scroll_container">
+         <div class="banner_scroll">
+            <ul>
+             <li><a class="banner_scroll_1 banner_scroll_0_act" href="javascript:void(0)"></a></li>
+              <li><a class="banner_scroll_2" href="javascript:void(0)"></a></li>
+             <li><a class="banner_scroll_3" href="javascript:void(0)"></a></li>
+            <li><a class="banner_scroll_4" href="javascript:void(0)"></a></li>
+            </ul>
+        </div> <!-- end banner_scroll -->
+       </div><!-- banner_scroll_container -->
+    
+     </div><!-- end singer_banner -->
+     
+<!-- 内容模块开始 -->
+ <div class="content">
+                   <!-- 标题 -->
+            <h2 class="content_title">歌手名的热门歌曲</h2>
+			<div id ="tpl_wrap">
+<!-- 1 热门歌曲模块 -->
+          
+            </div>
+             <h2 class="content_title content_title_nomarginbotom">歌手名的专辑</h2>
+			
+<!-- 3 更多专辑模块 -->
+      <div class="content_ablums_container">
+                <!-- 更多专辑 -->
+       <a class="content_title_top100" href="#"><span>更多专辑</span><i class="content_title_ablum_logo"></i></a>
+           <ul class="content_ablums" id ="content_ablums">
+            <!-- 一个content_ablum_item代表一行 -->
+
+
+           </ul><!-- end content_ablum  -->
+       </div><!-- content_ablums_container -->
+
+<!-- 4 乐队模块 -->
+    <div class="band_logo_container">
+          <div class="content_band_logo"></div>
+    </div><!-- band_logo_container -->
+        <div class="content_band_gallery_container">
+          <div class="content_band_gallery">
+                <img src="@{'/public/images/singer/band.png'}" />
+                <div class="gallery_color_bar"></div>
+               <div class="band_gallery_introduce_block">
+                <h2>歌手名属于<br/><span>乐队xx</span></h2>
+               <p>这里是一段歌手的简介，这里是一段歌手的简介，这里是一段歌手的简介，
+                这里是一段歌手的简介，这里是一段歌手的简介，这里是一段歌手的简介…… <a href="#">&#62;&#62;</a></p>
+               </div><!-- end band_gallery_introduce_block -->
+          </div><!-- end content_band_gallery -->
+        </div>
+
+
+<!-- 6 歌手相册模块 -->
+    <h2 class="content_title content_title_nomarginbotom">歌手名的相册</h2>
+       <div class="content_singer_gallery_container">
+          <a class="content_title_top100" href="#"><span>更多照片</span><i class="content_title_pic_logo"></i></a>
+        <div class="content_singer_gallery">
+      <div class="content_singer_gallery_box" id = "photoTag">
+       
+          
+       </div><!-- content_singer_gallery_box -->
+       </div><!-- content_singer_gallery -->
+     </div><!-- end  content_singer_gallery_container -->
+           <!-- 更多新曲 -->
+        
+<!-- 7 评论模块开始 -->
+  <div class="content_comment_container">
+    <div class="content_comment">评论模块
+     </div><!-- end content_comment -->
+      </div><!-- end content_comment_container -->
+       </div>
+        <!-- end content -->

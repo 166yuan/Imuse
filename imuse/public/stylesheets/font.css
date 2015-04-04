@@ -1,0 +1,66 @@
+*{
+	font-size: 15px;
+	text-decoration: none;
+	list-style: none;
+	
+}
+
+.header{
+	font-family: 
+             "Microsoft YaHei", "微软雅黑", 
+             STXihei, "华文细黑", Georgia, "Times New Roman", serif;
+}
+.banner_search_block a{
+	font-size: 12px;
+    font-weight: 600;
+}
+.banner_search_block .bold{
+    font-weight: 900;
+}
+.content_title{
+	font-family: 
+             "Microsoft YaHei", "微软雅黑", 
+             STXihei, "华文细黑", Georgia, "Times New Roman", serif;
+    font-size: 26px;
+}
+.content_list_itemContent{
+	font-size: 12px;
+	font-family: 
+             "Microsoft YaHei", "微软雅黑", 
+             STXihei, "华文细黑", Georgia, "Times New Roman", serif;
+}
+.content_list_itemContent_title{
+	font-size: 16px;
+}
+.content_list_itemContent_author{
+	font-size: 15px;
+}
+.content_list_itemContent_time{
+	font-size: 12px;
+}
+.content_foot {
+	font-size: 16px;
+	font-family: "Microsoft YaHei", "微软雅黑", 
+             STXihei, "华文细黑", Georgia, "Times New Roman", serif;
+}
+.rank_rel_bar_logo span{
+font-size: 26px;
+font-weight: 900;
+color: white;
+font-family: "Microsoft YaHei", "微软雅黑", 
+             STXihei, "华文细黑", Georgia, "Times New Roman", serif;
+}
+.rank_rel_bar  a{
+font-size: 18px;
+}
+.rank_rel_content_item_list_item{
+	font-size: 14px;
+}
+.recomend_title{
+	font-size: 16px;
+	font-family: "Microsoft YaHei", "微软雅黑", 
+             STXihei, "华文细黑", Georgia, "Times New Roman", serif;
+}
+.footer_content p{
+	font-size: 12px;
+}

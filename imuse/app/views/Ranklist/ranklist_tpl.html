@@ -1,0 +1,23 @@
+<script id="tpl" type="text/template">
+        {@each data as it,index}
+			   <li>
+                          <span class="bg_num" style="color:white" >${index|formatNumber}</span>
+                          <a title="/songs" href="/musicbox/play?trackId=${it.trackId}">
+                            <span class="bg_song">${it.track.name}</span>
+                          </a> 
+                          <span class="bg_singer">${it.track.author}</span>
+             
+                          <a title="play" href="/musicbox/play?trackId=${it.trackId}" class="bg_play_a" >
+                            <span title="播放" class="bg_listen">
+                              <img src="/public/images/ranklist_index/icon_play.png" alt="icon_play">
+                            </span>
+                          </a>
+                          <a title="collect" href="/musicbox/play?trackId=${it.trackId}" class="bg_collect_a">
+                            <span title="收藏" class="bg_collect">
+                              <img src="/public/images/ranklist_index/icon_collect.png" alt="icon_collect">
+                            </span>
+                          </a>
+          </li>
+        {@/each}
+       
+</script>

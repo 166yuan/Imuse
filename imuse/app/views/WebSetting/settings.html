@@ -1,0 +1,52 @@
+#{extends 'mana-main.html' /}
+#{set title:'Settings' /}
+#{set diamondActive:'active' /}
+
+<style>
+.table th, .table td {
+    text-align: center;
+}
+</style>
+#{get 'moreStyles' /}
+<div class="row-fluid">
+	<table class="table table-hover table-bordered" >
+    <tr>
+		<th width="5%">播放次序</th>
+		<th width="10%">大图名称</th>
+		<th width="30%">预览</th>
+		<th width="15%">是否生效</th>
+		<th>改变次序</th>
+		<th> </th>
+	</tr>
+	#{include 'WebSetting/nav.html' /}
+	<div class="span9">
+   #{list bannerList, as:'indexBanner'}
+    <tr>
+		<td>${indexBanner.weight}</td>
+        <td>${indexBanner.name}</td>
+        <td>
+		 <div class="col-sm-6 col-md-3">
+         <a href="/websetting/showpics?url=${indexBanner.url}" target="_blank"><img src=${indexBanner.url} alt="图片" height="100" width="200"/></a>
+   </div>
+        </td>
+		<td>
+		#{if indexBanner.enabled==true}
+		<a a class="btn btn-success" href="@{WebSetting.setEnable(indexBanner.id,false)}">是</a>
+			#{/if}
+			#{else}
+			<a a class="btn btn-primary" href="@{WebSetting.setEnable(indexBanner.id,true)}">否</a>
+			#{/else}
+		</td>
+		<td>
+		<a a class="btn btn-info" href="@{WebSetting.Move(indexBanner.weight,-1)}">上移</a>
+		<a a class="btn btn-info" href="@{WebSetting.Move(indexBanner.weight,1)}">下移</a>
+			</td>
+        <td>
+            <a a class="btn btn-danger" href="@{WebSetting.deleBanner(indexBanner.id)}">删除</a>
+        </td>
+    </tr>
+    #{/list}
+	</table>
+	
+	</div>
+</div>

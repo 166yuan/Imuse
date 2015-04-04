@@ -1,0 +1,32 @@
+#{extends 'ApplicationManager/trackbase.html' /}
+#{ set newMusic:"active" /}
+#{ set trackActive:"active" /}
+
+<table class="table table-hover table-bordered">
+	<tr>
+		<th width="15%">歌曲名</th>
+		<th width="15%">申请时间</th>
+		<th width="15%">是否允许</th>
+	</tr>
+	#{list trackbeanlist, as:'item'}
+	<tr>
+		<td>${item.name}</td>
+		<td>${new Date(item.createTime).simpleDateTime()}</td>
+
+		<td><a class="btn btn-info"
+			href="@{tracks.showtrackinfo(item.trackId)}">查看</a>
+			<a a class="btn btn-success"
+			href="@{tracks.passtrack(item.trackId,0,0)}">通过</a>
+			
+		</td>
+
+
+
+
+	</tr>
+	#{/list}
+</table>
+#{page pageBean: pageBean, params : params/}
+
+
+

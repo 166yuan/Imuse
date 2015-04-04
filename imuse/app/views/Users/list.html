@@ -1,0 +1,31 @@
+#{extends 'mana-main.html' /}
+#{set title:'Home' /}
+#{set listUserPageActive:'active' /}
+<div class="row-fluid">
+
+	#{include 'Users/nav.html' /}
+
+	<div class="span9">
+		<table class="table">
+			<tr>
+				<th>编号</th>
+				<th>邮箱</th>
+				<th>昵称</th>
+				<th>角色</th>
+				<th>状态</th>
+			</tr>
+			#{list items:users, as:'user'}
+			<tr>
+				<td>${user_index}</td>
+				<td>${user.email}</td>
+				<td>${user.nickname}</td>
+				<td>#{if user.role == 0} 普通用户 #{/if} #{else} 歌手 #{/else}</td>
+				<td>#{if user.emailVerify} 已邮箱验证 #{/if} #{else} 未验证邮箱 #{/else}
+				</td>
+			</tr>
+			#{/list}
+		</table>
+		#{page pageBean: pageBean, params : params/}
+	</div>
+	<!--/span-->
+</div>

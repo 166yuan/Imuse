@@ -1,0 +1,25 @@
+#{extends 'mana-main.html' /}
+#{set title:'Home' /}
+
+<div class="row-fluid">
+
+	#{include 'Users/nav.html' /}
+
+	<div class="span9">
+	
+编号：${user.id}<br>
+邮箱：${user.email}<br>
+密码：${user.passwd}<br>
+昵称：${user.nickname}<br>
+简介：${user.intro}<br>
+角色：${user.role}<br>
+状态：#{if user.emailVerify}
+已邮箱验证 
+			 #{/if}
+			 #{else}  
+未验证邮箱
+			#{/else}  
+			
+	</div>
+	<!--/span-->
+</div>

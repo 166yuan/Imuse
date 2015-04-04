@@ -1,0 +1,281 @@
+.myspace_index_container{
+	background-color: white;
+}
+.myspace_index_container_red_bar{
+	width: 100%;
+	background-color: #c54b4b;
+	height: 40px;
+}
+.myspace_index_container_banner_top_container{
+	width: 100%;
+	height: 150px;
+	background-color: #e6ddcf;
+	margin-top: 30px;
+}
+.myspace_index_container_banner_bottom_container{
+	width: 100%;
+	background-color: #c54b4b;
+	height: 240px;
+}
+.myspace_index_container_banner_top_container_rel{
+	max-width: 1360px;
+	margin:0 auto;
+	position: relative;
+	height: 150px;
+}
+.myspace_index_container_banner_bottom_container_rel{
+	max-width: 1360px;
+	margin:0 auto;
+	position: relative;
+}
+.banner_search_block {
+	top: 47px;
+	right: 276px;
+position: absolute;
+height: 62px;
+width: 360px;
+z-index: 3;
+}
+.banner_search_block li {
+float: left;
+margin-left: 10px;
+}
+.banner_search_block_form {
+position: relative;
+width: 360px;
+margin: 0 auto;
+overflow: hidden;
+z-index: 3;
+}
+.banner_search_block input {
+width: 400px;
+font-size: 15px;
+margin: 10px auto 0 auto;
+padding: 10px 10px;
+opacity: 0.9;
+z-index: 2;
+}
+.banner_search_block label {
+position: absolute;
+left: 10px;
+top: 22px;
+font-size: 15px;
+z-index: 1;
+}
+.banner_search_block button {
+position: absolute;
+bottom: 0px;
+right: 0px;
+float: left;
+background: url(../images/index/search.png) no-repeat center;
+width: 40px;
+height: 40px;
+border: 0 none;
+cursor: pointer;
+display: block;
+}
+.banner_search_block_shadow{
+	height: 77px;
+	width: 435px;
+	position: absolute;
+	background-color: #ceb2a7;
+	top:26px;
+	left: 0px;
+	z-index: -1;
+}
+.banner_search_block_shadow_left,.banner_search_block_shadow_right{
+	width: 0px;
+	height: 0px;
+	border-width: 18px;
+	border-style: solid;
+	border-color: #ceb2a7 #ceb2a7 #e6ddcf #e6ddcf;
+	position: absolute;
+	top:41px;
+}
+.banner_search_block_shadow_right{
+border-color:  #e6ddcf #e6ddcf #ceb2a7 #ceb2a7;
+border-width: 38px;
+top: 0px;
+right: 0px;
+}
+.banner_top_face{
+	position: absolute;
+	left: 237px;
+	top: 30px;
+	z-index: 4;
+}
+.banner_top_face img{
+width: 174px;
+height: 174px;
+border: 3px solid white;
+
+}
+.banner_bottom_rel_introduce_block{
+	font-family: "微软雅黑";
+	color: white;
+	font-size: 12px;
+	position: absolute;
+	top: 60px;
+	left: 237px;
+	z-index: 4;
+}
+.banner_bottom_rel_introduce_block p{
+	margin-bottom: 13px;
+}
+.banner_bottom_rel_introduce_block p span{
+	font-size: 14px;
+	padding:0px 6px;
+}
+.banner_bottom_rel_introduce_block h1{
+	font-size: 18px;
+	margin:36px 0 26px 0;
+}
+.introduce_image_block{
+	position: absolute;
+	right: 200px;
+	top: 2px;
+	z-index: 2;
+}
+.introduce_image_block img{
+	width: 643px;
+	height: 100%;
+}
+.banner_ingredient{
+	width: 100%;
+	height: 240px;
+	background-color: #c54b4b;
+	position: absolute;
+	z-index: 3;
+	background: -moz-linear-gradient(left, #c54b4b 0%,
+	rgba(197, 75, 75, 1) 30%,
+	rgba(197, 75, 75, 0) 60%,
+	rgba(197, 75, 75, 1) 100%
+	); 
+
+
+	background: -webkit-gradient(
+	  linear,
+	  left center,right center,
+	  from(rgba(197, 75, 75, 1)),
+	  color-stop(0,rgba(197, 75, 75, 1)),
+	   color-stop(60%,rgba(197, 75, 75, 1)),
+	  color-stop(60%,rgba(197, 75, 75, 0)),
+	  color-stop(1,rgba(197, 75, 75, 1))
+	  );
+	background: linear-gradient(to right,rgba(197, 75, 75, 1) 30%,rgba(197, 75, 75, 0.99) 40%,rgba(197, 75, 75, 0) 60%,rgba(197, 75, 75, 1) 80%);
+
+}
+.big_container{
+
+	background-color: #f0eae1;
+	width: 100%;
+}
+.big_container_rel{
+	width: 890px;
+	margin:0 auto;
+	padding-top: 40px;
+}
+.big_container_rel_item{
+	width: 100%;
+	position: relative;
+	border-left: 2px solid white;
+	min-height: 260px;
+
+}
+.big_container_rel_item_title_block{
+	position: absolute;
+	background: url(../images/myspace_index/song_logo.png) no-repeat left center;
+	left: -48px;
+	top: -15px;
+	padding: 10px 42px;
+}
+
+.big_container_rel_item .title_song{
+	background: url(../images/myspace_index/song_logo.png) no-repeat left center;
+}
+
+.big_container_rel_item .title_lyc{
+	background: url(../images/myspace_index/lyc_logo.png) no-repeat left center;
+}
+.big_container_rel_item .title_video{
+	background: url(../images/myspace_index/video_logo.png) no-repeat left center;
+}
+
+.big_container_rel_item_title_block .radius{
+
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #c54b4b;
+	float: left;
+	margin-top: 3px;
+	margin-right: 15px;
+}
+.big_container_rel_item_title_block h1{
+	float: left;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	font-weight: 700;
+}
+.big_container_rel_item_content{
+	font-size: 12px;
+	color: #a0a0a0;
+	position: absolute;
+	top: 30px;
+}
+.big_container_rel_item_content p{
+	padding: 0px 0 13px 20px;
+}
+.big_container_rel_item_content p:last-child{
+	color: #806640;
+}
+.big_container_rel_item_content_pic{
+
+	background-color: white;
+	width: 600px;
+	min-height: 260px;
+	position: relative;
+	left: 288px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.big_container_rel_item_content_song_container{
+
+	background: url(../images/myspace_index/song_container.png) no-repeat center;
+	width: 540px;
+	height: 476px;
+	margin:0 auto;
+}
+.big_container_rel_item_content_song_container img{
+	width: 460px;
+	max-height: 470px;
+	margin: 9px 0 0 25px;
+}
+.big_container_rel_item_content_lyc_container{
+	text-align: center;
+}
+.big_container_rel_item_content_lyc_container .ui-lrc-sentence{
+ color: #999999;
+ font-size: 12px;
+ padding: 10px 0 0 0;
+}
+.big_container_rel_item_content_video_container{
+
+
+}
+
+#bottom_more{
+   
+	background: url(../images/myspace_index/more.png) left center no-repeat;
+	padding-left: 35px;
+	margin:50px auto 0 auto;
+	font-family: "微软雅黑";
+	color: #4d3636;
+	font-size: 18px;
+	width: 72px;
+	display: none;
+}
+.big_container_rel_items li:last-child .big_container_rel_item_content_pic #bottom_more {
+  display: block;
+
+}

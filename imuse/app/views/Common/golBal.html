@@ -1,0 +1,14 @@
+<script type="text/javascript">
+  var Url = "http://localhost:9000/";
+   var numberFormat = function (data){
+   		data = ++data;
+  		if(data<10){
+  			data= data +"";
+  			return '0'+data;
+  		}
+  		else{
+  			return data;
+  		}
+  }
+  juicer.register('formatNumber',numberFormat);
+</script>

@@ -1,0 +1,90 @@
+.header_container{
+	background-color: white;
+}
+.header a,.header span{
+	color:#806640;
+}
+.header_nav>ul{
+	border-bottom: solid #9daad0 2px;
+}
+.header_nav li:hover,.header_nav li:visited{
+	border-bottom: solid #3b55a1 3px;
+}
+.header_service_item{
+	border-left: solid #e6ddcf 1px;
+}
+.banner_block_container{
+background-color: #e6ddcf;
+}
+.banner_search_block li a{
+    color: #3f549a;
+}
+.banner_search_block label{
+	color: #a0a0a0;
+}
+.banner_search_block label > span{
+	color:#535353;
+}
+.container{
+	background-color: #f0eae1;
+}
+.container .banner_scroll{
+	background-color: #e6ddcf;
+}
+.content_title,.content_title > span{
+	color:#4d3636;
+}
+.content_list_itemContent h3{
+  border-bottom: solid #3b55a1 3px;
+  color:#4d3636;
+}
+.content_list_itemContent_title a,.content_list_itemContent_author a,.content_list_itemContent h3 a{
+ 	color:#4d3636;
+ }
+.content_list_itemContent_time{
+ 	color:#998282;
+ }
+
+.content_list_itemContent{
+background-color: #f5f1eb;
+}
+.content_foot{
+	color:#4d3636;
+}
+.rank{
+	
+	background-color:#2f4584;
+}
+.rank a{
+	color: white;
+}
+.rank_rel_bar_more{
+	color: white;
+}
+.rank_rel_bar_date a{
+	color: white;
+}
+.rank_rel_bar_date li.act a{
+	color: #959595;
+}
+
+.recomend{
+color:#e6ddcf;
+}
+.recomend_title{
+	color: #535353;
+}
+.footer_content{
+	background-color: #ebe4d9;
+}
+.footer_content p{
+	color: #a0a0a0;
+}
+.returnTop{
+	background-color: #d9ccb9;
+}
+.banner_scroll
+{
+	background-color: #e6ddcf;
+}
+

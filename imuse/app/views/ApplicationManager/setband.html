@@ -1,0 +1,49 @@
+#{extends 'ApplicationManager/base.html' /} 
+#{ set setband :"active" /}
+#{ set musicManagerActive:"active" /}
+
+<form class="bs-docs-example form-horizontal" action="@{ApplicationManager.setBandAction}" method="post" enctype="multipart/form-data">
+	<fieldset>
+		<legend>请填写乐队信息</legend>
+		<div class="control-group">
+			<label class="control-label" for="email">歌手邮箱</label>
+			<div class="controls">
+				<input type="text" id="email" name = "email"  required="required">
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="bandname">乐队队名</label>
+			<div class="controls">
+				<input type="text" id="bandname" name = "bandname" required="required">
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label" for="bandinfo">乐队简介</label>
+			<div class="controls">
+				<textarea name="bandinfo" id= "bandinfo" cols="5" rows="5" required="required"></textarea>
+
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="bandinfo">乐队图片</label>
+			<div class="controls">
+			<input type="file" id="InputFile" name="file" accept="image/*">
+			</div>
+		</div>
+		<div class="controls">
+
+			<button type="submit" class="btn btn-primary">设置</button>
+			<button type="reset" class="btn btn-primary">重置</button>
+		</div>
+		
+		
+	</fieldset>
+
+
+
+</form>
+
+
+
+

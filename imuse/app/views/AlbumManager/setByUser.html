@@ -1,0 +1,39 @@
+#{extends 'AlbumManager/index.html' /} 
+#{ set setByUser :"active" /}
+<div class="row-fluid">
+<span class="badge badge-info">点击图片查看专辑</span>
+<br>
+<br>
+</div>
+#{list items:userlist, as:'user'}
+	#{if user_index%3 == 1}
+		<div class="row-fluid">
+			 <div class="span4">
+			 	<a href="@{AlbumManager.getAlbumById(user.id)}">
+			 	<img class="img-circle" src="/public/images/user_sample.jpg" style="width: 120px; height: 120px;">
+              	</a>
+              <h2>${user.nickname}</h2>
+            </div><!--/span-->
+	#{/if}
+	#{else}
+	#{if user_index%3 == 0}
+		 <div class="span4">
+			 	<a href="@{AlbumManager.getAlbumById(user.id)}">
+			 	<img class="img-circle" src="/public/images/user_sample.jpg" style="width: 120px; height: 120px;">
+              	</a>
+              <h2>${user.nickname}</h2>
+             </a>
+            </div><!--/span-->
+         </div>   
+	#{/if}
+	#{else}
+		 <div class="span4">
+			 	<a href="@{AlbumManager.getAlbumById(user.id)}">
+			 	<img class="img-circle" src="/public/images/user_sample.jpg" style="width: 120px; height: 120px;">
+              	</a>
+              <h2>${user.nickname}</h2>
+             </a>
+            </div><!--/span-->
+	#{/else}
+	#{/else}
+#{/list}

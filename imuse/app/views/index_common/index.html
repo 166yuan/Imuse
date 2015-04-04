@@ -1,0 +1,38 @@
+#{extends 'Common/index_main.html' /}
+#{set title:'Home' /}
+#{set 'moreStyles'}
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/index.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/banner.css'}">
+#{/set}
+<!-- 加载tpl文件 start -->
+<div class="redbarContainer">
+    <div class="redbar"></div>
+    #{if islogin==true}
+        <p>下午好，${nickname},发站内信</p>
+    #{/if}
+    #{else }
+        <p>下午好，<a href="@{Home.register()}">免费注册</a>或<a href="@{Home.login()}">登陆</a></p>
+    #{/else}
+</div>
+#{output 'index_common/banner_tpl.html'/}
+#{output 'index_common/index_tpl.html'/}
+#{output 'index_common/index_HotList_tpl.html'/}
+<!-- 加载tpl文件 end -->
+#{include 'index_common/banner.html'/}
+#{include 'index_common/index_container.html'/}
+#{set 'moreScripts'}
+  <script type="text/javascript" src = "@{'/public/javascripts/juicer.js'}"></script>
+  <!-- ajax start -->
+  <script type="text/javascript" src = "@{'/public/javascripts/banner_getData.js'}"></script>
+  <script type="text/javascript" src = "@{'/public/javascripts/index_getData.js'}"></script>
+  <!-- ajax end -->
+  <!-- 页面增强js start -->
+  <script src="@{'/public/javascripts/include.js'}" type="text/javascript" ></script>
+  <script src="@{'/public/javascripts/banner.js'}" type="text/javascript" ></script>
+  <script src="@{'/public/javascripts/index.js'}" type="text/javascript" ></script>
+  <!-- 页面增强js end --> 
+#{include 'Common/golBal.html'/}
+#{/set}
+
+
+     

@@ -1,0 +1,13 @@
+<script id="tpl" type="text/template">
+        {@each data as it,index}
+			<li class="content_list_item">
+              <a href=/MusicBox/play?albumId=${it.albumId}><img src="/public/images/index/content_list_picture.png"/><i></i></a>
+                <div class="content_list_itemContent">
+                    <h3>专辑<a href="#">${it.name}</a></h3>
+                <p class="content_list_itemContent_title"><a href="#">${it.track.name}</a></p>
+                <p class="content_list_itemContent_author"><a href="#">${it.author}</a></p>
+                <p class="content_list_itemContent_time">上线:${it.createTimeDesc}</p>
+                </div>
+            </li>
+        {@/each}
+</script>	

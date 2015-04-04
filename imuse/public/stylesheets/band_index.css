@@ -1,0 +1,62 @@
+.band_container{
+
+
+}
+
+.content{
+	width: 960px;
+	margin:0 auto;
+	text-align: center;
+}
+.video{
+width: 960px;
+margin:100px auto 0 auto;
+}
+.video iframe{
+width: 960px;
+}
+.red_title{
+	margin-top: 60px;
+	margin-bottom: 20px;
+	text-align: left;
+	font-family: "Microsoft YaHei", "微软雅黑", 
+ STXihei, "华文细黑", Georgia, "Times New Roman", serif;
+}
+.red_title,.red_title span{
+	clear: both;
+color: #c54b4b;
+}
+.red_title span{
+	display: block;
+	font-size: 32px;
+	margin:10px 0;
+	font-family: "Microsoft YaHei", "微软雅黑", 
+ STXihei, "华文细黑", Georgia, "Times New Roman", serif;
+}
+.picmore{
+	width: 960px;
+	height: 300px;
+	margin:0 auto;
+}
+.picmore ul li{
+	display: block;
+	float: left;
+	padding: 0 0;
+}
+
+.picmore_1 img{
+	width: 300px;
+	height: 300px;
+}
+.picmore_2 img{
+	width: 260px;
+	height: 150px;
+   display: block;
+}
+.picmore_3 img{
+	display: block;
+	width: 200px;
+	height: 300px;
+	float: left;
+}
+

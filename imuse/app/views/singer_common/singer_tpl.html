@@ -1,0 +1,49 @@
+<script id="tpl" type="text/template">
+        {@each data as it,index}
+			 {@if index == 0}
+			 <ul class="content_list">
+			 {@/if}
+			 {@if index <4}
+              <!-- 一个li代表一个专辑-->
+             <li class="content_list_item">
+              <a href="#"><img src="/public/images/index/content_list_picture.png"/><span>${index|formatNumber}</span></a>
+                <div class="content_list_itemContent">
+                    <h3>专辑：<a href="#">谁是陈奂仁</a></h3>
+                <p class="content_list_itemContent_title"><a href="#">${it.name}</a></p>
+                <p class="content_list_itemContent_author"><a href="#">${it.author}</a></p>
+                <p class="content_list_itemContent_time">上线:${it.createTimeDesc}</p>
+                </div>
+            </li> <!-- end content_list_item -->
+			{@/if}
+			{@if index == 4}
+            </ul>
+			{@/if}
+			{@if index == 4}
+			 <ul class="content_top100">
+        		<a class="content_title_top100" href="#"><span>TOP 100</span><i class="content_title_top100_logo"></i></a>
+             	 <li class="content_top100_item">
+                <ul class="content_top100_item_container">
+                <li  class="content_top100_item_num"><a>${index|formatNumber}</a></li>
+                <li class="content_top100_item_titie"><a >${it.name}<i>/more</i></a></li>
+                <li class="content_top100_item_message">${it.author}</li>
+                <li class="content_top100_item_button" ><a class="content_top100_item_play"></a><a class="content_top100_item_collect"></a></li>
+                </ul><!-- end content_top100_item_container -->
+              </li><!-- end content_top100_item -->
+ <!-- 一个li代表一个行 -->
+			{@/if}
+			{@if index > 4}
+              <li class="content_top100_item">
+                <ul class="content_top100_item_container">
+                <li  class="content_top100_item_num"><a>${index|formatNumber}</a></li>
+                <li class="content_top100_item_titie"><a >${it.name}<i>/more</i></a></li>
+                <li class="content_top100_item_message">${it.author}</li>
+                <li class="content_top100_item_button" ><a class="content_top100_item_play"></a><a class="content_top100_item_collect"></a></li>
+                </ul><!-- end content_top100_item_container -->
+              </li><!-- end content_top100_item -->
+			{@/if}
+			{@if index == 10}
+            </ul><!-- end content_top100 -->
+			{@/if}
+        {@/each}
+       
+</script>

@@ -1,0 +1,25 @@
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+#msg-area{
+    position: absolute;
+    top: 40px;
+    margin-left: 530px \9;
+    text-align: center;
+}
+
+footer{
+	text-align: center;
+}
+
+/*
+申请管理模块样式
+*/
+.userlistsearch{
+	float:right;
+	padding-bottom: 10px;
+}
+/*
+*/

@@ -1,0 +1,42 @@
+<div class="redbar"></div>
+<div class="register_content">
+	<ul class="content_top">
+		<li class="content_top_item "><h1>1</h1><h1>设置用户名</h1></li>
+		<li class="content_top_item content_top_item_center hidden"><h1>2</h1><h1>填写账户信息</h1></li>
+		<li class="content_top_item hidden"><h1>√</h1><h1>注册成功</h1></li>
+	</ul>
+	<div class="content_center">
+
+		<div class="content_center_item">
+			<ul>
+				<li><label for="email">电子邮箱</label><input id="email" name="email" type="eamil" /></li>
+				<li><label class="content_center_item_second" for="check">验证码</label><input id="check" name="check" type="text" /><img src="@{'/public/images/register_index/check.png'}"></li>
+			</ul>
+			<div class="content_center_item_agree">
+				<input type="checkbox" /><span>同意<a href="#">&lt;&lt;iMuse服务协议&gt;&gt;</a></span>
+				<a href="#" class="content_center_item_next" onclick="check1()">下一步</a>
+			</div>
+		</div>
+
+		<div class="content_center_item2 none">
+			<ul>
+				<li class="content_center_item2_item">
+					<label><h2 class="top">您的昵称</h2><h2 class="bottom">中英文均可，酷酷的就成</h2></label><input class="first-child" type="text" name="nickname"  id="nickname"/>
+				</li>
+				<li class="content_center_item2_item">
+					<label><h2 class="top">设定密码</h2><h2 class="bottom">6-20个字符，英文、符号或数字均可</h2></label><input type="password" name="passwd"  id="passwd"/>
+				</li>
+				<li class="content_center_item2_item">
+					<label><h2 class="top">确认密码</h2><h2 class="bottom">跟上面一样就好了</h2></label><input type="password" name="repeat" id="repeat"/>
+				</li>
+			</ul>
+			<a href="#" onclick="check2()" class="content_center_item_next">确定</a>
+		</div>
+		
+		<div class="content_center_item3 none">
+			<h1 class="content_center_item3_welcome"><span>[撒花]</span> 鼓掌通过，欢迎您的加入！</h1>
+			<a href="#" class="content_center_item_next">完善个人信息</a>
+			<a href="@{Home.index()}" class="content_center_item_in">直接进入iMuse</a>
+		</div>
+	</div>
+</div>

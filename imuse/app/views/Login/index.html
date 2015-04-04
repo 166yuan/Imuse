@@ -1,0 +1,57 @@
+#{extends 'Login/login_main.html' /}
+#{set title:'登录' /}
+<div id="login-redbg">
+    <div id="login-whitebg">
+      <div id="login-box">
+        <div id="login-rbox-bg">
+        </div>
+        <!-- end login-rbox-bg -->
+        <div id="login-rbox">
+              <div id="login-prompt">
+                <p id="login-p-up">iMuse账号登录</p>
+                <p id="login-p-botton">为了您更好的音乐体验</p>
+              </div>
+              <form action="#" method="post" id="loginFrom" name="loginfrom" onsubmit="return Checkout(document.loginfrom)">
+                <div class="login-text-box" id="login-username">
+                  <label for="login-username-text" id="login-username-laber" ></label>
+                  <input id="username" class="login-text-input" type="text" value="" autocomplete="off">
+                </div>
+                <div class="login-text-box" id="login-password">
+                  <label for="login-password-text" id="login-password-label"></label>
+                  <input id="password" class="login-text-input" type="password" value="" autocomplete="off">
+                </div>
+                <div class="login-buttons-box" id="login-signin">
+                  <button type="button" id="login-sign-button" >登录</button>
+                </div>
+                <div class="login-buttons-box" id="login-register">
+                  <input type="button" id="login-register-button" value="注册" onclick="redirect()">
+                </div>
+              </form>
+              <div id="login-other-box">
+                <ul id="login-other-list">
+                  <li id="login-weibo-li">
+                    <a href="#" class="login-other-href">
+                          <img src="/public/images/login/weibo.png" alt="qq">
+                          <div id="login-weibobox">微博登录</div> 
+                    </a>
+                  </li>
+                  <li id="login-qq-li">
+                    <a href="#" class="login-other-href">
+                          <img src="/public/images/login/qq.png" alt="qq">
+                          <div id="login-qqbox">QQ登陆</div>
+                    </a>
+                  </li>
+                  <li id="login-more-li">
+                    <a href="#" class="login-other-href" id="login-more-href">
+                      <div id="login-morebox">更多</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+        <!-- end login-rbox -->
+      </div>
+      <!-- end login-box -->      
+    </div>
+    <!-- end login-whitebg -->
+  </div>

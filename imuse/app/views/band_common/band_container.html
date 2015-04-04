@@ -1,0 +1,164 @@
+<div class="band_container">
+<div class="singer_banner">
+  <div class="singer_banner_main">
+
+    <div class="user_header_container">
+   <div class="user_header">
+      <p>上午好，<span>用户名123</span> 欢迎回来。</p>
+   </div><!-- end user_header -->
+  </div><!-- user_header_container -->
+
+<!-- 滚动屏 -->
+    <div class="banner_block_container">
+      <div class="banner_block">
+
+<!-- 滚动屏—搜索模块 -->
+      <div class="banner_search_block">
+        <ul>
+          <li><a class="bold" href="#">热门搜索：</a></li>
+          <li><a href="#">陈奕迅</a></li>
+          <li><a href="#">最炫民族风</a></li>
+          <li><a href="#">我是歌手</a></li>
+        </ul>
+        
+           <div class="banner_search_block_form">
+            <form action="#" method="post">
+        <input type="text" />
+            <label>请输入您要搜索的<span>歌名</span>或<span>歌手</span></label>
+        <button type="submit"></button>
+        </form>
+           </div> <!-- end  banner_search_block_form--> 
+      </div> <!-- end  banner_search_block-->
+
+<!-- 滚动屏——相册 -->
+      <div class="banner_gallery">
+        <div class="banner_introduce_block">
+           
+           <p class="collect_block" id ="band_tpl">
+          <a class="collect" href="#"><img src="@{'/public/images/singer/icon_collect.png'}"/>&nbsp;&nbsp;收藏</a> <a class="collect" href="#"><img src="@{'/public/images/singer/icon_good.png'}"/>&nbsp;&nbsp;点赞</a>
+           </p>
+        <div class="share">
+              <!-- JiaThis Button BEGIN -->
+        <span>分享到：</span>
+       <div class="jiathis_style">
+          <a class="jiathis_button_qzone"></a>
+          <a class="jiathis_button_tsina"></a>
+          <a class="jiathis_button_tqq"></a>
+          <a class="jiathis_button_weixin"></a>
+          <a class="jiathis_button_renren"></a>
+          <a class="jiathis_button_xiaoyou"></a>
+          <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+          <a class="jiathis_counter_style"></a>
+        </div>
+             <!-- JiaThis Button END -->
+        </div><!-- end share -->
+      </div><!-- end banner_introduce_block -->
+
+       <div class="banner_block_gradient">
+      </div><!-- end banner_block_gradient -->
+      
+        <ul class="banner_gallery_pics">
+       <!-- 一个item代表一个大框 -->
+         <li class="banner_gallery_item" ><!-- 一个item -->
+          <img class="banner_gallery_item_img" src="@{'/public/images/band/band.png'}" />
+          </li><!-- end 一个item -->
+          <li class="banner_gallery_item" ><!-- 一个item -->
+          <img class="banner_gallery_item_img" src="@{'/public/images/index/banner_gallery2.png'}" />
+          </li><!-- end 一个item -->
+          <li class="banner_gallery_item" ><!-- 一个item -->
+          <img class="banner_gallery_item_img" src="@{'/public/images/index/banner_gallery3.png'}" />
+          </li><!-- end 一个item -->
+          <li class="banner_gallery_item" ><!-- 一个item -->
+          <img class="banner_gallery_item_img" src="@{'/public/images/index/banner_gallery4.png'}" />
+          </li><!-- end 一个item -->
+        </ul>
+
+         </div><!-- end banner_gallery -->
+
+       
+
+      </div> <!-- end banner_block -->
+    </div> <!-- end banner_block_container -->
+
+   </div><!-- end singer_banner_main -->
+         
+         <div class="banner_scroll_container">
+         <div class="banner_scroll">
+            <ul>
+             <li><a class="banner_scroll_1 banner_scroll_0_act" href="javascript:void(0)"></a></li>
+            <li><a class="banner_scroll_2" href="javascript:void(0)"></a></li>
+             <li><a class="banner_scroll_3" href="javascript:void(0)"></a></li>
+            <li><a class="banner_scroll_4" href="javascript:void(0)"></a></li>
+            </ul>
+        </div> <!-- end banner_scroll -->
+       </div><!-- banner_scroll_container -->
+    
+     </div><!-- end singer_banner -->
+
+<!-- 优酷视频板块开始 -->
+      <div class="video"><!-- 存放优酷视频 -->
+       <img src="@{'/public/images/band/video.png'}" />
+      </div>
+
+<!-- 内容模块开始 -->
+        <div class="content">
+                   <!-- 标题 -->
+            <h2 class="content_title">xx乐队的热门歌曲</h2>
+ <!-- top100 板块开始 -->
+ 			<div id ="tpl_wrap">
+             <ul class="content_top100">
+        	 <a class="content_title_top100" href="#"><span>TOP 100</span><i class="content_title_top100_logo"></i></a>
+              <!-- 一个li代表一个行 -->
+              
+
+            </ul><!-- end content_top100 -->
+            </div>
+ <!-- top100 板块结束 --> 
+          <h2 class="content_title content_title_nomarginbotom">xx乐队的专辑</h2>
+<!--  更多专辑模块开始 -->
+      <div class="content_ablums_container">
+                <!-- 更多专辑 -->
+       <a class="content_title_top100" href="#"><span>更多专辑</span><i class="content_title_ablum_logo"></i></a>
+           <ul class="content_ablums" id ="content_ablums">
+
+           </ul><!-- end content_ablum  -->
+       </div><!-- content_ablums_container -->
+<!--  更多专辑模块结束 -->
+<!--  xxx乐队都有谁模块开始-->
+         <h2 class="red_title">xx乐队 <span>都有谁？</span></h2>
+   <div class="picmore">
+   <ul>
+   <li class="picmore_1"><img  src="/public/images/index/banner_gallery1.png" /></li>
+   <li class="picmore_2"><img  src="/public/images/index/banner_gallery2.png" />
+                         <img src="/public/images/index/banner_gallery2.png" />
+  </li>
+   <li class="picmore_3"> <img  src="/public/images/index/banner_gallery3.png" />
+      					<img class="picmore_3" src="/public/images/index/banner_gallery3.png" />
+   </li>
+   </ul>   
+ 
+  
+   </div><!-- end picmore -->
+<!--  xxx乐队都有谁模块结束-->
+
+<!--  乐队相册模块开始 -->
+    <h2 class="content_title content_title_nomarginbotom">xx乐队的相册</h2>
+       <div class="content_singer_gallery_container">
+          <a class="content_title_top100" href="#"><span>更多照片</span><i class="content_title_pic_logo"></i></a>
+        <div class="content_singer_gallery">
+      <div class="content_singer_gallery_box" id="photoTag">
+      
+       </div><!-- content_singer_gallery_box -->
+       </div><!-- content_singer_gallery -->
+     </div><!-- end  content_singer_gallery_container -->
+     
+
+     <div class="content_comment_container">
+    <div class="content_comment">评论模块
+     </div><!-- end content_comment -->
+      </div><!-- end content_comment_container -->
+
+        </div><!-- end content -->
+       
+
+</div><!-- end band_container -->

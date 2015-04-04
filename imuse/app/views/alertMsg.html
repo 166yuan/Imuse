@@ -1,0 +1,15 @@
+<div id="msg-area" class="span4 offset4 hide alert">
+    <p></p>
+</div>
+<script src="@{'/public/javascripts/alert-msg.js'}"></script>
+#{if flash?.messageType}
+<script>
+$(function(){
+    if("${flash.messageType}" == "info"){
+        MessageAlert.showInfo('${flash.messageContent}');
+    }else{
+        MessageAlert.showError('${flash.messageContent}');
+    }
+});
+</script>
+#{/if}

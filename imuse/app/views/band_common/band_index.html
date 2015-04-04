@@ -1,0 +1,32 @@
+#{extends 'index_common/index_main.html' /}
+#{set title:'Band_home' /}
+#{set 'moreStyles'}
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/singer_banner.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/singer_songs.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/singer_ablum.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/singer.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/band_index.css'}">
+
+
+#{/set}
+<!-- 加载tpl模板 start-->
+#{output 'band_common/band_info_tpl.html'/}
+#{output 'band_common/band_tpl.html'/}
+#{output 'band_common/band_album_tpl.html'/}
+#{output 'band_common/band_photoTag_tpl.html'/}
+<!-- 加载tpl模板 end-->
+#{set 'moreScripts'}
+  <script type="text/javascript" src = "@{'/public/javascripts/juicer.js'}"></script>
+<!-- 加载全局内容  start 用到juicer所以放在它后面-->
+#{include 'Common/golBal.html'/}
+ <script src="@{'/public/javascripts/banner.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+ <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1406120293502607" charset="utf-8"></script>
+ <!-- ajax start-->
+ <script src="@{'/public/javascripts/band_getData.js'}" type="text/javascript"></script>
+ <!-- ajax end-->
+ <script type="text/javascript">
+$(document).trigger("banner");
+     
+ </script>
+  #{/set}
+  #{include 'band_common/band_container.html'/}

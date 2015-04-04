@@ -1,0 +1,173 @@
+.content_title{
+  height: 26px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.content_title >span{
+margin-left:10px;
+}
+.content_list_itemContent{
+ padding: 20px 20px;
+ text-align: left;
+}
+.content_list_itemContent h3 {
+  display: inline;
+  padding: 4px 0;
+}
+.content_list_itemContent_title{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.content_list_itemContent_author{
+  margin-bottom: 10px;
+}
+.content_list_itemContent h3+a{
+  font-size: 12px;
+}
+.content_list{
+width: 964px;
+margin-left: auto;
+margin-right: auto;
+height: 374px;
+margin-bottom: 60px;
+}
+.content_list_item{
+  float: left;
+  margin-left: 3px;
+  position: relative;
+}
+.content_list_item a span{
+
+  font-size: 108px;
+  position: absolute;
+  left: 55px;
+  top: 64px;
+  color: white;
+font-family: "Microsoft YaHei", "微软雅黑", 
+             STXihei, "华文细黑", Georgia, "Times New Roman", serif;
+}
+
+.content_foot{
+  display: block;
+  width: 72px;
+  height: 26px;
+  padding:40px 0px;
+  clear: both;
+  position: relative;
+  padding-left:32px;
+  line-height: 24px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.content_foot >i{
+background: url(../images/index/more.png) no-repeat center;
+display:block;
+width:24px;
+height: 24px; 
+position: absolute;
+left: 0px;
+top: 39px;
+}
+.content_top100{
+  width: 960px;
+  margin: 0 auto;
+}
+
+.content_title_top100{
+  display: block;
+  clear: both;
+  text-align: right;
+  line-height: 20px;
+  height: 20px;
+  margin-right: 60px;
+  padding-bottom: 40px;
+  vertical-align: middle;
+  position: relative;
+}
+.content_title_top100_logo,.content_title_ablum_logo,.content_title_pic_logo{
+  display: block;
+  width: 18px;
+    height: 18px;
+  float: right;
+  right: 100px;
+  margin-right: 10px;
+  margin-top: 1px;
+}
+.content_title_top100_logo{
+background: url(../images/singer/icon_top_100.png) no-repeat center;
+
+}
+.content_title_ablum_logo{
+background: url(../images/singer/icon_cd.png) no-repeat center;
+}
+.content_title_pic_logo{
+  background: url(../images/singer/icon_pic.png) no-repeat center;
+}
+
+.content_title_top100 span{
+   color: #384f90;
+   font-size:18px;
+   font-weight: 800;
+    font-family: "Microsoft YaHei", "微软雅黑", 
+             STXihei, "华文细黑", Georgia, "Times New Roman", serif;
+  display: block;
+  float: right;
+}
+
+.content_top100_item{
+  font-family: "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", Georgia, "Times New Roman", serif;
+  line-height: 50px;
+  height: 50px;
+}
+.content_top100_item_container li{
+  float: left;
+  line-height: 50px;
+  overflow: hidden;
+}
+.content_top100_item_num{
+  font: normal bold 24px "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", Georgia, "Times New Roman", serif;
+  color: #384f90;
+  margin-right: 20px;
+  line-height: 50px;
+  margin-left: 20px;
+}
+.content_top100_item_titie{
+  display: block;
+  font-size: 16px;
+  color: #4d3636;
+  overflow: hidden;
+  position: relative;
+  width: 290px;
+  height: 50px;
+  text-align: left;
+
+ 
+}
+
+.content_top100_item_titie i{
+  font-size: 14px;
+  color:#6ab792;
+}
+.content_top100_item_message{
+font-size: 12px;
+font-family: serif;
+color: #b5b5b5;
+margin-right: 50px;
+}
+.content_top100_item_button a{
+float: left;
+}
+.content_top100_item_collect{
+  background: url(../images/singer/icon_collect_title.png)center no-repeat;
+  display: block;
+  width: 47px;
+  height: 50px;
+  margin-right: 40px;
+}
+.content_top100_item_play{
+  background: url(../images/singer/icon_play_title.png) center no-repeat;
+  display: block;
+  width: 47px;
+  height: 50px;
+  margin-left: 40px;
+}

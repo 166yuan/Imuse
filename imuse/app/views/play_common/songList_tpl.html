@@ -1,0 +1,43 @@
+<script id="songList_tpl" type="text/template">
+	{@each bean.trackList as track,i}
+		<ul class="play_container_center_item" song-id="${track.id}" song-name="${track.name}" author-name="${track.author}" song-duration=${track.duration} audio-src="${track.audioFile}" release-src="${track.releaseFile}" lyricFile=${track.lyricFile} ><!-- һ��item���һ��������Ϣ -->
+	    	<li class="left"> 
+	       		<span class="left_input" ><input type="checkbox" name="checkbox"/></span>
+	        	<span class="left_title">${track.name}</span></li>
+	        	<li class="center"><span>${track.author}</span></li>
+	        	<li class="right"><span>${bean.album.name}</span>
+	         	<a href="#" id="buttons_collect_first" class="buttons_delete"></a>
+	        	<a href="#" class="buttons_more"></a>
+	        	<a href="#" class="buttons_collect"></a>
+	        </li>
+	    </ul><!-- end item -->
+    {@/each}
+</script>
+<script id="singleSong_tpl" type="text/template">
+		<ul class="play_container_center_item" song-id="${track.id}" song-name="${track.name}" author-name="${track.author}" song-duration=${track.duration} audio-src="${track.audioFile}" release-src="${track.releaseFile}" lyricFile=${track.lyricFile} ><!-- һ��item���һ��������Ϣ -->
+	    	<li class="left"> 
+	       		<span class="left_input" ><input type="checkbox" name="checkbox"/></span>
+	        	<span class="left_title">${track.name}</span></li>
+	        	<li class="center"><span>${track.author}</span></li>
+	        	<li class="right"><span>${track.albumName}</span>
+	         	<a href="#" id="buttons_collect_first" class="buttons_delete"></a>
+	        	<a href="#" class="buttons_more"></a>
+	        	<a href="#" class="buttons_collect"></a>
+	        </li>
+	    </ul><!-- end item -->
+</script>
+<script id="songList_collec" type="text/template">
+	{@each trackList as track,i}
+		<ul class="play_container_center_item" song-id="${track.id}" song-name="${track.name}" author-name="${track.author}" song-duration=${track.duration} audio-src="${track.audioFile}" release-src="${track.releaseFile}" lyricFile=${track.lyricFile} ><!-- һ��item���һ��������Ϣ -->
+	    	<li class="left"> 
+	       		<span class="left_input" ><input type="checkbox" name="checkbox"/></span>
+	        	<span class="left_title">${track.name}</span></li>
+	        	<li class="center"><span>${track.author}</span></li>
+	        	<li class="right"><span>${track.albumName}</span>
+	         	<a href="#" id="buttons_collect_first_dele" class="buttons_delete"></a>
+	        	<a href="#" class="buttons_more"></a>
+	        	<a href="#" class="buttons_collect"></a>
+	        </li>
+	    </ul><!-- end item -->
+	{@/each}
+</script>

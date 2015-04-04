@@ -1,0 +1,33 @@
+#{extends 'ApplicationManager/base.html' /}
+#{ set newMusicianrequest:"active" /}
+#{ set musicManagerActive:"active" /}
+<table class="table table-hover table-bordered">
+	<tr>
+		<th width="20%">用户名</th>
+		<th>申请内容</th>
+		<th width="15%">申请时间</th>
+		<th width="15%">是否允许</th>
+	</tr>
+	#{list requestlist, as:'item'}
+	<tr>
+		<td>${item.findUserByUserid(item.userId).nickname}</td>
+
+		<td>${item.content}</td>
+		<td>${new Date(item.createTime).simpleDateTime()}</td>
+		<td><a class="btn btn-success"
+			href="@{ApplicationManager.acceptmusician(item.id,pageBean.curPage,item.status)}">允许</a>
+			<a a class="btn btn-danger"
+			href="@{ApplicationManager.rejectmusician(item.id,pageBean.curPage,item.status)}">拒绝</a>
+		</td>
+
+
+
+
+
+	</tr>
+	#{/list}
+</table>
+#{page pageBean: pageBean, params : params/}
+
+
+

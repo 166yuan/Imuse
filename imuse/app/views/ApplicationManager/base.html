@@ -1,0 +1,29 @@
+#{extends 'mana-main.html' /} #{set title:'Home' /}
+
+
+<div class="row">
+	<div class="span2">
+		<ul class="nav nav-pills nav-stacked nav-list mynav">
+			<li class="nav-header">歌手申请列表</li>
+			<li class="#{get 'newMusicianrequest'/}"><a
+				href="@{ApplicationManager.getNewMusicianRequest(0)}">未处理歌手申请</a></li>
+			<li class="#{get 'acceptMusicianrequest'/}"><a
+				href="@{ApplicationManager.getAcceptMusicianRequest(0)}">已同意歌手申请</a></li>
+			<li class="#{get 'rejectMusicianrequest'/}"><a
+				href="@{ApplicationManager.getRejectMusicianRequest(0)}">已拒绝歌手申请</a></li>
+			<li class="nav-header">乐队申请列表</li>
+			<li class="#{get 'newBandrequest'/}"><a
+				href="@{ApplicationManager.getNewBandRequest(0)}">未处理乐队申请</a></li>
+			<li class="#{get 'acceptBandrequest'/}"><a
+				href="@{ApplicationManager.getAcceptBandRequest(0)}">已同意乐队申请</a></li>
+			<li class="#{get 'rejectBandrequest'/}"><a
+				href="@{ApplicationManager.getRejectBandRequest(0)}">已拒绝乐队申请</a></li>
+			<li class="nav-header">设置歌手/乐队</li>
+			<li class="#{get 'setmusician'/}"><a
+				href="@{ApplicationManager.getIsnotMusician()}">设置歌手</a></li>
+			<li class="#{get 'setband'/}"><a
+				href="@{ApplicationManager.setband()}">设置乐队</a></li>
+		</ul>
+	</div>
+	<div class="span10">#{doLayout /}</div>
+</div>

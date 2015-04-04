@@ -1,0 +1,24 @@
+#{extends 'index_common/index_main.html' /}
+#{set title:'专辑主页' /}
+#{set 'moreStyles'}
+<link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/ablum_index.css'}">
+#{/set}
+
+#{output 'ablum_common/album_tpl.html'/}
+#{output 'ablum_common/albumTrack_tpl.html'/}
+
+#{set 'moreScripts'}
+ <script type="text/javascript" src = "@{'/public/javascripts/juicer.js'}"></script>
+ <script type="text/javascript" src = "@{'/public/javascripts/ablum_index.js'}"></script>
+<script type="text/javascript" src = "@{'/public/javascripts/album_getData.js'}"></script>
+<script src="/public/javascripts/banner.js" type="text/javascript"></script>
+ <!-- 轮播大图 end-->
+ <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1406120293502607" charset="utf-8"></script>
+ <script type="text/javascript">
+$(document).trigger("banner");
+ </script>
+ #{include 'Common/golBal.html'/}
+#{/set}
+#{include 'ablum_common/ablum_index_container.html' /}
+
+

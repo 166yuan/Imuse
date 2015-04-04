@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Audio Test</title>
+	<link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/font-awesome.min.css'}">
+	<script src="@{'/public/javascripts/jquery-1.7.1.min.js'}"></script>
+	<script src="@{'/public/javascripts/audio.min.js'}"></script>
+    <script>
+        /*定义全局变量audio*/    
+        var audio;
+    </script>
+	<script>
+      audiojs.events.ready(function() {
+        var as = audiojs.createAll();
+        audio = as[0];
+        $('.play-btn').click(function(){
+        	audio.play();
+        });
+        $('.pause-btn').click(function(){
+        	audio.pause();
+        });
+        ids = ['vol-0', 'vol-10', 'vol-40', 'vol-70', 'vol-100'];
+      	for (var i = 0, ii = ids.length; i < ii; i++) {
+          var elem = document.getElementById(ids[i]),
+              volume = ids[i].split('-')[1];
+          elem.setAttribute('data-volume', volume / 100)
+          elem.onclick = function(e) {
+            audio.setVolume(this.getAttribute('data-volume'));
+            e.preventDefault();
+            return false;
+          }
+        }
+        $(".skipTo").click(function(){
+        	audio.skipTo(0.2);
+        	alert(audio.element.currentTime+","+typeof(audio.duration));
+        });
+      });
+    </script>
+    <script src="@{'/public/javascripts/musicbox.js'}"></script>
+    <style>
+        .songList{
+            display: block;
+            text-decoration: none;
+            color:#000;
+        }
+        .songList:hover{
+            color:gray;
+        }
+    </style>
+    </head>
+	<body>
+    <h1>audiojs.create(element, settings)</h1>
+    <p>.ogg fallback</p>
+    <audio src="@{'/res/sound.ogg'}" preload>
+    </audio>
+    <h3>播放控制</h3>
+    <p class="play-btn">Play</p>
+    <p class="pause-btn">Pause</p>
+    <h3>音量控制</h3>
+    <p><a href="#" id="vol-0">Volume: 0.0</a></p>
+    <p><a href="#" id="vol-10">Volume: 0.1</a></p>
+    <p><a href="#" id="vol-40">Volume: 0.4</a></p>
+    <p><a href="#" id="vol-70">Volume: 0.7</a></p>
+    <p><a href="#" id="vol-100">Volume: 1.0</a></p>
+    <h3>进度跳转</h3>
+    <p class="skipTo">跳转</p>
+    <h3>播放列表</h3>
+    <a href="#" id="getPLayList" data-albumId="album1" data-curPage="0">点击获取播放列表</a>
+    <div id = "playList">
+        
+    </div>
+    <h3>换一首歌</h3>
+    <p class="chgSong">换歌</p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<script id="tpl_info" type="text/template">
+			<h2 class="banner_introduce_block_title">${data.name}</h2>
+            <p class="banner_introduce_block_content">${data.intro}<a href="#">&#62;&#62;</a></p>
+
+           <ul class="banner_introduce_block_list">
+            <li><h3>评分</h3><p class="star">★ ★ ★ ★ ☆<span>4</span></p></li>
+            <li><h3>乐队</h3><p>乐队名称</p></li>
+            <li><h3>专辑</h3><p>{@each data.albumList as it,index}
+				{@if index <4}
+			${it.name}{@if index <3}、{@/if}
+			{@/if}
+			{@/each}
+			……</p></li>
+			<li class="noborder"><h3>热门歌曲</h3><p>{@each data.trackList as it,index}
+			{@if index <4}
+			${it.name}{@if index <3}、{@/if}
+			{@/if}
+			{@/each}……</p></li>
+			
+            
+           </ul>
+       
+</script>

@@ -1,0 +1,18 @@
+#{extends 'index_common/index_main.html' /}
+#{set title:'灵感空间' /}
+#{set 'moreStyles'}
+<link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/inspirationSpace_index.css'}">
+#{/set}
+
+#{output 'inspirationSpace_common/inspirationSpace_myinfo_tpl.html'/}
+#{output 'inspirationSpace_common/inspirationSpace_events_tpl.html'/}
+#{set 'moreScripts'}
+ <script type="text/javascript" src = "@{'/public/javascripts/juicer.js'}"></script>
+ #{include 'Common/golBal.html'/}
+ <script type="text/javascript" src = "@{'/public/javascripts/myspace_index.js'}"></script>
+ <script type="text/javascript" src = "@{'/public/javascripts/myspace_getData.js'}"></script>
+#{/set}
+
+#{include 'inspirationSpace_common/inspirationSpace_index_container.html' /}
+
+

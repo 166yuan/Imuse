@@ -1,0 +1,33 @@
+<script id="tpl_hotlist" type="text/template">
+		 <div  class="rank_rel_content_item">
+          
+            {@each data as it, index}
+               {@if index <5}
+                <ul class="rank_rel_content_item_list_item ">
+                    <li class="rank_rel_content_item_list_item_num">
+					<a href="/musicbox/play?trackId=${it.trackId}" >${index++|formatNumber}</a></li>
+                    <li class="rank_rel_content_item_list_item_title"><a href="/musicbox/play?trackId=${it.trackId}">${it.track.name}</a></li>
+                    <li class="rank_rel_content_item_list_item_author"><a href="/musicbox/play?trackId=${it.trackId}" >${it.track.author}</a></li>
+                    <li class="rank_rel_content_item_list_item_statists"><a href="/musicbox/play?trackId=${it.trackId}" >1390</a></li>
+                </ul>
+              {@/if}
+          {@/each} 
+        
+          </div>
+
+         <div  class="rank_rel_content_item">
+
+        {@each data as it, index}
+               {@if index >4}
+                <ul class="rank_rel_content_item_list_item">
+                    <li class="rank_rel_content_item_list_item_num"><a href="#" >${index++|formatNumber}</a></li>
+                    <li class="rank_rel_content_item_list_item_title"><a href="#">${it.track.name}</a></li>
+                    <li class="rank_rel_content_item_list_item_author"><a href="#" >${it.track.author}</a></li>
+                    <li class="rank_rel_content_item_list_item_statists"><a href="#" >1390</a></li>
+                </ul>
+              {@/if}
+          {@/each} 
+
+		   </div>
+
+</script>

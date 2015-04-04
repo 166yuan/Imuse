@@ -1,0 +1,14 @@
+#{extends 'index_common/index_main.html' /}
+#{set title:'singer_channel' /}
+#{set 'moreStyles'}
+
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/banner.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/singerChannel_index.css'}">
+#{/set}
+#{set 'moreScripts'}
+ <script src="@{'/public/javascripts/banner.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+  <script type="text/javascript">
+$(document).trigger("banner");
+ </script>
+ #{/set}
+ #{include 'Channel_common/singerChannel_common/singerChannel_container.html'/}

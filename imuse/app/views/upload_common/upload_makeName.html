@@ -1,0 +1,24 @@
+#{extends 'upload_common/upload_index.html' /}
+<form action="@{kingda.upload2}" name="myform" id ="myform" method="post">
+			<div class="content_center">
+				 <!-- one item 要显示请去掉none-->
+				<div class="upload_content_center_item1 ">
+					<h1 class="upload_content_center_item1_title">给灵感取个动听的名字</h1>
+					<input class="upload_content_center_item1_input" type="text" name="title" id = "first_content"/>
+					<button type="submit" class="content_center_item_next" id ="first">下一步</button>
+				</div>
+			</div>
+</form>
+#{set 'moreScripts'}
+<script type="text/javascript">
+	var myform = document.getElementById("myform");
+	var title = document.getElementById("first_content");
+	myform.onsubmit=function(){
+		if(title.value.length==0){
+			alert("请填入灵感名字");
+			return false;
+		}
+		return true;
+	}
+</script>
+#{/set}

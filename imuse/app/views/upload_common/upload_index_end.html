@@ -1,0 +1,22 @@
+#{extends 'upload_common/upload_index.html' /}
+		<input  type="hidden" id = "title" value="${title}" name="title"/>
+	<div class="content_center">
+		
+		<div class="upload_content_center_item6 item_border_top">
+			<h1>灵感发表成功!</h1>
+			<a href="#" class="content_center_item_next">查看刚发布的灵感</a>
+		</div>
+		
+	</div>
+#{set 'moreScripts'}
+<script type="text/javascript">
+	$(".upload_content_top").removeClass("none");
+	$("#upload_content_top_name").text($("#title").val());
+	$(".content_top_item").eq(2).removeClass("hidden");
+</script>
+#{/set}
+
+
+
+
+

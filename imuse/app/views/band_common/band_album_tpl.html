@@ -1,0 +1,15 @@
+<script id="tpl_album" type="text/template">
+        {@each data as it,index}
+			{@if index < 5}
+			 <li class="content_ablum_item">
+             <ul class="content_ablum_item_content">
+                 <li class="content_ablum_item_img"><img src="/public/images/index/content_list_picture.png"/></li>
+                 <li class="content_ablum_item_title">${it.name}</li>
+                 <li class="content_ablum_item_star">★ ★ ★ ★ ☆<span>4</span></li>
+                 <li class="content_ablum_item_date">${it.createTimeDesc}</li>
+             </ul><!-- end content_ablum_item_content -->
+            </li> <!-- end content_ablum_item -->
+			{@/if}
+        {@/each}
+       
+</script>

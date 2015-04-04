@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>#{get 'title' /}</title>
+        <meta charset="${_response_encoding}">
+        
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/reset.css'}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/color.css'}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/font.css'}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/header.css'}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/footer.css'}">
+           #{get 'moreStyles' /}
+        
+        
+    </head>
+    <body>
+        <div class="all">
+<div class="header_container">
+   <div class="header">
+    <div class="header_logo"><a title="index" href="@{Home.index()}"><img src="@{'/public/images/iMuseLogo.png'}"/></a></div>
+    <div class="header_nav">
+     <ul>
+        <li><a title="index" href="@{Home.index()}">HOME</a></li>
+        <li><a title="music" href="@{Home.ranklist()}">榜单</a></li>
+        <li><a title="music" href="#">音乐</a></li>
+        <li><a title="music" href="#">乐手/乐队</a></li>
+     </ul>
+    </div>
+    <div class="header_service">
+        <ul>
+            <li class="header_service_item"><a href="#"><img src="@{'/public/images/index/icon_my_music.png'}" /><span>我的音乐</span></a></li>
+            <li class="header_service_item"><a href="#"><img src="@{'/public/images/index/icon_idea_zone.png'}" /><span>灵感空间</span></a></li>
+        <li class="header_service_item"><a href="#"><img src="@{'/public/images/index/icon_my_homepage.png'}" /><span>我的空间</span></a></li>
+            <li class="header_service_item">
+                <ul>
+                    <li><a class="fa fa-twitter" href="#"></a><a class="fa fa-facebook" href="#"></a></li>
+                    <li><a class="fa fa-google" href="#"></a><a class="fa fa-instagram" href="#"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- end header -->
+</div><!-- end header_container -->
+
+        #{doLayout /}
+
+        <div class="footer">
+    <div class="footer_content">
+     <p>Copyright 2014-2014 I-MU.SE All rights reserved. 0.0501s     粤ICP备12345678号    粤网文[2014]1234-000号    增值业务许可证B2-20140101    网络视听许可证1234567号</p>
+    </div><!-- end footer_content -->
+    <div class="returnTop">
+        <a href="javascript:void(0)"></a>
+    </div>
+</div><!-- end footer -->
+
+   </div><!-- end all -->
+       <script src="@{'/public/javascripts/jquery-1.7.1.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/include.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/header.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/footer.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        #{get 'moreScripts' /}
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<script id="tpl_events" type="text/template">
+	{@each data.list as it,index}
+		{@if it.tracksId!=null}
+		<li class="big_container_rel_item">
+						<div class="big_container_rel_item_title_block title_song"><!-- title_song 可变 -->
+							<div class="radius"></div>
+							<h1>${it.time}</h1>
+						</div>
+						<div class="big_container_rel_item_content">
+							<p>发布了歌曲&lt;&lt;${it.name}&gt;&gt;</p>
+							<p>Tags:新歌、一首</p>
+						</div>
+						<div class="big_container_rel_item_content_pic">
+							<div class="big_container_rel_item_content_song_container"><!-- 该类可变 -->
+								<a title="/songs" href="/musicbox/play?trackId=${it.tracksId}">
+								<img src="/public/images/index/content_list_picture.png" /></a>
+							</div>
+						<a id="bottom_more" href="">更多内容</a>
+						</div>
+		</li>
+		{@/if}
+		{@if it.videoId!=null}
+			<li class="big_container_rel_item">
+						<div class="big_container_rel_item_title_block title_video"><!-- title_video 可变 -->
+							<div class="radius"></div>
+							<h1>${it.time}</h1>
+						</div>
+						<div class="big_container_rel_item_content">
+							<p>发布了视频&lt;&lt;${it.name}&gt;&gt;</p>
+							<p>Tags:新歌、一首</p>
+						</div>
+						<div class="big_container_rel_item_content_pic">
+							<div class="big_container_rel_item_content_video_container">
+								<embed src="http://player.youku.com/player.php/sid/${it.videoId}/v.swf" allowFullScreen="true" quality="high" width="550" height="330" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+							</div>
+							<a id="bottom_more" href="">更多内容</a>
+						</div>
+					</li>
+		{@/if}
+	{@/each}
+</script>

@@ -1,0 +1,16 @@
+#{extends 'index_common/index_main.html' /}
+#{set title:'注册主页' /}
+#{set 'moreStyles'}
+<link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/register_index.css'}">
+#{/set}
+
+
+#{set 'moreScripts'}
+ 
+ <script type="text/javascript" src = "@{'/public/javascripts/register_index.js'}"></script>
+
+#{/set}
+
+#{include 'register_common/register_index_container.html' /}
+
+

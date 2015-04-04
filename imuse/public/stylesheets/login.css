@@ -1,0 +1,264 @@
+
+#login-redbg{
+min-width: 1250px;
+min-height: 670px;
+padding-top: 40px;
+background-color: #C54B4B;
+}
+
+#login-whitebg{
+min-width: 1250px;
+min-height: 670px;
+padding-top: 60px;
+background-color: #FFF;
+}
+
+#login-box{
+margin: 0px auto;
+height: 400px;
+width: 960px;
+background-image: url(../images/login/login-box.png);
+}
+
+#login-rbox-bg{
+float: right;
+width: 362px;
+height: 390px;
+overflow: hidden;
+background-image: url(../images/login/login-box.png);
+-webkit-filter: blur(5px); /* Chrome, Opera */
+-moz-filter: blur(5px);
+-ms-filter: blur(5px);    
+filter: blur(5px); 
+filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+}
+
+#login-rbox{
+
+background-image: -webkit-linear-gradient(top, rgb(0, 0, 1), rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.901961) 80%, rgba(255, 255, 255, 0.941176) 90%);
+background-position-x: initial;
+background-position-y: initial;
+background-size: initial;
+background-repeat-x: initial;
+background-repeat-y: initial;
+background-attachment: initial;
+background-origin: initial;
+background-clip: initial;
+background-color: initial;
+	
+float: right;
+position: relative;
+right: -37.8%;
+width: 362px;
+height: 400px;
+
+}
+
+#login-rbox
+#login-prompt{
+margin: 30px auto 0px;
+color: white;
+font-family: "Microsoft YaHei";
+}
+
+#login-rbox
+#login-prompt p{
+margin: 0px auto;
+font-size: 22px;
+}
+
+#login-rbox
+#login-prompt
+#login-p-up{
+width: 160px;
+font-size: 22px;
+}
+
+#login-rbox
+#login-prompt
+#login-p-botton{
+width: 150px;
+font-size: 14px;
+margin-top: 10px;
+}
+
+#login-rbox
+#loginFrom{
+margin-top:36px;
+}
+
+#login-rbox
+#loginFrom
+.login-text-box{
+width: 270px;
+height: 35px;
+margin:25px auto 10px;
+border-bottom:1px solid white;   
+}
+
+#loginFrom
+.login-text-box
+#login-username-laber{
+display: inline-block;
+position: absolute;
+width: 35px;
+height: 35px;
+background: url(../images/login/username.png) no-repeat;
+}
+
+#loginFrom
+.login-text-box
+#login-password-label{
+display: inline-block;
+position: absolute;
+width: 35px;
+height: 35px;
+background: url(../images/login/password.png) no-repeat;
+}
+
+#loginFrom
+.login-text-box
+.login-text-input{
+width: 270px;
+height: 35px;
+padding:3px;
+padding-left: 45px;
+background-color: transparent;
+border: 0;
+color: white;
+font-size: 20px;
+}
+
+#loginFrom
+.login-buttons-box{
+width: 270px;
+height: 55px;
+margin: 0px auto;
+}
+
+.login-buttons-box
+#login-sign-button{
+width: 222px;
+height: 46px;
+margin: 14px 24px 0px;
+color: white;
+font-family: "Microsoft YaHei";
+font-size: 20px;
+background-color: #C54B4B;
+border:1px solid #C54B4A;
+}
+
+.login-buttons-box
+#login-sign-button:hover{
+width: 222px;
+height: 46px;
+margin: 14px 24px 0px;
+color: white;
+font-family: "Microsoft YaHei";
+font-size: 20px;
+background-color: #D24B40;
+border:1px solid #C54B4A;
+}
+
+.login-buttons-box
+#login-register-button{
+width: 222px;
+height: 46px;
+margin: 14px 24px 0px;
+color: #4C3535;
+font-family: "Microsoft YaHei";
+font-size: 20px;
+background-color: rgba(255, 255, 255, 0.22);
+border:1px solid #ccc;
+}
+
+.login-buttons-box
+#login-register-button:hover{
+width: 222px;
+height: 46px;
+margin: 14px 24px 0px;
+color: #4C3535;
+font-family: "Microsoft YaHei";
+font-size: 20px;
+background-color: rgba(255, 255, 255, 0.65);
+border:1px solid #bbb;
+}
+
+#login-rbox
+#login-other-box{
+width: 270px;
+height:50px;
+margin: 10px auto 0px;
+border-top: 1px solid #ccc; 
+}
+
+#login-rbox
+.login-other-href{
+color: #999;
+}
+
+#login-rbox
+#login-more-href{
+color: #C54B4B;
+}
+
+
+#login-rbox
+#login-other-list img{
+	float:left;
+}
+
+#login-rbox
+#login-other-list {
+height: 28px;
+margin-top: 15px;
+margin-left: 20px;
+}
+
+#login-rbox
+#login-other-list li{
+float: left;
+}
+
+#login-rbox
+#login-other-list
+#login-weibo-li{
+width: 100px;
+}
+
+#login-rbox
+#login-other-list
+#login-qq-li{
+width:85px;
+}
+
+#login-rbox
+#login-other-list
+#login-more-li{
+width:45px;
+}
+
+#login-rbox
+#login-other-list
+#login-weibobox{
+float: right;
+margin-top:8px;
+width: 64px; 
+font-size: 15px;
+}
+
+#login-rbox
+#login-other-list
+#login-qqbox{
+float: right;
+margin-top:8px; 
+font-size: 15px;
+}
+
+#login-rbox
+#login-other-list
+#login-morebox{
+float: right;
+margin-top:8px; 
+font-size: 15px;
+}

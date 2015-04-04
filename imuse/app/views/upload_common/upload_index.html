@@ -1,0 +1,36 @@
+#{extends 'index_common/index_main.html' /}
+#{set title:'灵感发布' /}
+#{set 'moreStyles'}
+<link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/register_index.css'}">
+<link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/upload_index.css'}">
+<link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/font-awesome.css'}">
+<link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/simditor.css'}">
+#{/set}
+
+
+<div class="redbar"></div>
+	<div class="upload_content_container">
+		
+		<div class="register_content">
+
+			<div class="upload_content_top none"><!-- 第一张的时候隐藏该div标签 none  -->
+				<h1 id="upload_content_top_name" class="upload_content_top_name" ></h1>
+				<ul class="content_top"><!-- 要显示标签请去掉hidden  -->
+					<li class="content_top_item hidden"><h1>1</h1><h1>发布类型</h1></li>
+					<li class="content_top_item content_top_item_center hidden"><h1>2</h1><h1 id="top_item_title">图文</h1></li>
+					<li class="content_top_item hidden"><h1>√</h1><h1>发布成功</h1></li>
+				</ul>
+			</div>
+			  #{doLayout /}
+
+			
+
+		</div>
+			
+	</div>
+
+</div>
+
+
+
+

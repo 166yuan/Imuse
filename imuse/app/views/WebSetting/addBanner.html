@@ -1,0 +1,33 @@
+#{extends 'mana-main.html' /}
+#{set title:'addBanner' /}
+#{set diamondActive:'active' /}
+
+<div class="row-fluid">
+
+	#{include 'WebSetting/nav.html' /}
+
+	<div class="span9">
+		<form action="@{WebSetting.upload}" method="post" enctype="multipart/form-data" class="navbar-form pull-left">
+
+			<div class="form-group">
+			
+				<label for="BannerName">请输入大图名称</label>
+				<input type="text" name="bannername" class="form-control" id="exampleInputEmail1" placeholder="请输入名称">
+
+			</div>
+			<br>
+			<div class="form-group">
+				<label for="exampleInputFile">请输入链接页面（点击大图后跳转）</label>
+				<input type="text" name="link" class="form-control" id="exampleInputEmail1" placeholder="输入链接地址，http://.....">
+			</div>
+			<br>
+			<div class="form-group">
+				<label for="exampleInputFile">请选择一张图片，<span>支持格式jpg、gif、png、bmp</span></label>
+				<input type="file" id="InputFile" name="f"  accept="image/*">
+			</div>
+            <br>
+				<button type="submit" class="btn btn-info">确定</button>
+		</form>
+	</div>
+	<!--/span-->
+</div>

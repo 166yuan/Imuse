@@ -1,0 +1,57 @@
+#{extends 'mana-main.html' /} #{set title:'专辑设置' /}
+ <div class="container-fluid">
+ 	
+ 	<div class="hero-unit">
+ 		<span class="badge badge-info">点击专辑进行修改</span>
+ 		<br>
+ 		<br>
+           #{list items:albumlsit, as:'album'}
+	#{if album_index%4 == 1}
+		<div class="row-fluid">
+			   <div class="span3">
+		  	<a href="@{AlbumManager.editAlbum(album.id)}">
+			 	#{if album.imageUrl !=null}
+			 	<img class="img-circle" src="${album.imageUrl}" style="width: 120px; height: 120px;">
+                #{/if}
+                #{else}
+                <img class="img-circle" src="/public/images/album_sample.png" style="width: 120px; height: 120px;">
+                #{/else}       
+              <h2>${album.name}</h2>
+              <small>${album.note}</small>
+             </a>
+            </div><!--/span-->
+	#{/if}
+	#{else}
+	#{if album_index%4 == 0}
+		    <div class="span3">
+		  	<a href="@{AlbumManager.editAlbum(album.id)}">
+			 	#{if album.imageUrl !=null}
+			 	<img class="img-circle" src="${album.imageUrl}" style="width: 120px; height: 120px;">
+                #{/if}
+                #{else}
+                <img class="img-circle" src="/public/images/album_sample.png" style="width: 120px; height: 120px;">
+                #{/else}       
+              <h2>${album.name}</h2>
+              <small>${album.note}</small>
+             </a>
+            </div><!--/span-->
+         </div>   
+	#{/if}
+	#{else}
+		    <div class="span3">
+		  	<a href="@{AlbumManager.editAlbum(album.id)}">
+			 	#{if album.imageUrl !=null}
+			 	<img class="img-circle" src="${album.imageUrl}" style="width: 120px; height: 120px;">
+                #{/if}
+                #{else}
+                <img class="img-circle" src="/public/images/album_sample.png" style="width: 120px; height: 120px;">
+                #{/else}       
+              <h2>${album.name}</h2>
+              <small>${album.note}</small>
+             </a>
+            </div><!--/span-->
+	#{/else}
+	#{/else}
+#{/list}
+    </div>
+</div>

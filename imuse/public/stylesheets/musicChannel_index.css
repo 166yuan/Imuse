@@ -1,0 +1,76 @@
+.content{
+	text-align: center;
+	background-color: #f0eae1;
+
+}
+.songs{
+	width: 960px;
+	margin: 0 auto;
+	padding-bottom: 150px;
+}
+
+.title-edit{
+	position:absolute;
+	bottom:0px;
+	right: -52px;
+	color: #998282;
+	font-size: 14px;
+}
+.content_title{
+	clear:both;
+	padding-top: 40px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+.content_title_another{
+	position: relative;
+	width: 156px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 40px;
+	margin-bottom: 40px;
+	padding-bottom: 0px;
+}
+.content_title_morePadding{
+	padding-top: 100px;
+}
+.content_list_item:hover i{
+	display: block;
+}
+.clearFix:after{
+	content: '.';
+	visibility: hidden;
+	clear:both;
+	display: block;
+}
+.clearFix{
+	display: block;
+
+}
+
+.content_top100_item_titie{
+	margin-right: 50px;
+	font-size: 16px;
+}
+.content_top100_item{
+	border-bottom: 2px solid #e3dacc;
+}
+.banner{
+	background-color: #f0eae1;
+}
+.redbarContainer .redbar{
+	background-color: #c54b4b;
+	height: 50px;
+}
+.redbarContainer p{
+	width: 1300px;
+	margin: 0 auto;
+	text-align: right;
+	font-size: 12px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.redbarContainer p a{
+	color:#3b55a1;
+	font-size: 12px;
+}

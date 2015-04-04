@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <meta charset="${_response_encoding}">
+	  <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/reset.css'}">
+	  <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/header.css'}">
+	  <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/color.css'}">
+	  <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/font.css'}">
+	  <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/play_index.css'}">
+	  <script>
+	     /*定义全局变量audio*/    
+	     var audio;
+	     /*定义全局变量userId */
+	     var userId = 1;
+	  </script>
+	  <script src="@{'/public/javascripts/jquery-1.7.1.min.js'}"></script>
+	  <script src="@{'/public/javascripts/musicbox.js'}"></script>
+	  <script src="@{'/public/javascripts/music_getData.js'}"></script>
+	  <script src="@{'/public/javascripts/audio.min.js'}"></script>
+	  <script src="@{'/public/javascripts/juicer.js'}"></script>
+</head>
+<body>
+<audio>
+</audio>
+<div class="header_container">
+<div class="header">
+    <div class="header_logo"><img src="@{'/public/images/iMuseLogo.png'}"/></div>
+    <div class="header_search">
+      <input  />
+      <a href="#"><i></i></a>
+     <div class="header_search_bar">
+     </div>
+     <div class="header_search_bar_rightRect"></div>
+      <div class="header_search_bar_leftRect"></div>
+    </div>
+    <div class="header_service">
+        <ul>
+            <li class="header_service_item"><a href="#"><img src="@{'/public/images/index/icon_my_music.png'}" /><span>我的音乐</span></a></li>
+            <li class="header_service_item"><a href="#"><img src="@{'/public/images/index/icon_idea_zone.png'}" /><span>灵感空间</span></a></li>
+        <li class="header_service_item"><a href="@{Home.myspace()}"><img src="@{'/public/images/index/icon_my_homepage.png'}" /><span>我的空间</span></a></li>
+            <li class="header_service_item">
+                <ul>
+                    <li><a class="fa fa-twitter" href="/Login/index"></a><a class="fa fa-facebook" href="/Login/index"></a></li>
+                    <li><a class="fa fa-google" href="/Login/index"></a><a class="fa fa-instagram" href="/Login/index"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- end header -->
+</div>
+<!-- header_container -->
+<div class="red_bar"></div>
+<!-- play_container start  -->
+ <div class="play_container">
+  <div class="play_container_left">
+    <ul>
+      <li class="active songPlayMenu"><a href="#">正在播放</a></li>
+      <li class="songPlayRecord"><a href="#">播放历史</a></li>
+      <li class="songPlayCollect"><a href="#">我的收藏</a></li>
+    </ul>
+    <ul class="play_container_left_bottom">
+    <li class="play_list_menu"><a href="#">我的歌单</a><i></i></li>
+    </ul>
+  </div><!-- end play_container_left -->
+  <div class="play_container_center">
+                <ul class="play_container_center_title">
+                  
+                    <li class="left">歌曲</li>
+                    <li class="center" >演唱者</li>
+                    <li class="right" >专辑</li>
+                  
+                </ul><!-- end title -->
+              
+              <div class="play_container_center_content">
+     <!-- 最多显示9行信息，输出时需注意 -->
+				
+              </div>
+
+  </div><!-- end div.play_container_center -->
+
+             <div class="play_container_center_bottom">
+               <input type="checkbox" />
+              <a class="button_first" href="#"><i></i><span>删除</span></a>
+              <a class="button_second" href="#"><i></i><span>收藏</span></a>
+              <a class="button_third" href="#"><i></i><span>添加到歌单</span></a>
+              <a class="button_fourth" href="#"><i></i><span>更多</span></a>
+              
+              </div><!-- end item -->
+
+  <div class="play_container_right">
+  <img src="@{'/public/images/play/ablum_pic.png'}" />
+  <div class="play_lrc_container">
+
+  <ul>
+  </ul>
+
+  </div><!-- end play_lrc_container -->
+  </div><!-- end div.play_container_right  -->
+</div><!-- end play container -->
+
+<div class="play_music_container">
+  <div class="play_music_content">
+          <div class="left_panel">
+           <a class="left_panel_prev" href="#"></a>
+           <a class="left_panel_play" href="#"></a>
+           <a class="left_panel_next" href="#"></a>
+          </div>
+          <div class="center_panel">
+           <h4 class="center_panel_title"></h4>
+            <span class="center_panel_time_cur"></span>
+            <span class="center_panel_time_all duration"></span>
+            <div class="center_panel_bar">
+             <div class="center_panel_cur_bar"></div>
+             <a href="#" class="center_panel_cur_bar_pointer"></a>
+            </div>
+          </div>
+          <div class="right_panel">
+          <a class="noise" href="#"></a>
+          <div class="right_panel_bar">
+            <div class="right_panel_bar_cur">
+             </div>
+             <a class="right_panel_bar_pointer" href="#"></a>
+          </div>
+          </div><!-- end right panel -->
+
+  </div><!-- end play_music_content -->
+
+  </div><!-- end play_music_container -->
+  #{output 'play_common/songList_tpl.html'/}
+</body>
+</html>

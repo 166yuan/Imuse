@@ -1,0 +1,272 @@
+
+
+
+
+.container{
+  width: 100%;
+  overflow: hidden;
+  margin:0 auto;
+  text-align: center;
+}
+
+.content{
+  text-align: center;
+}
+.content_title{
+  height: 26px;
+  margin: 40px auto;
+}
+.content_title >span{
+margin-left:10px;
+}
+.content_list_itemContent{
+ padding: 20px 20px;
+ text-align: left;
+}
+.content_list_itemContent h3 {
+  display: inline;
+  padding: 4px 0;
+}
+.content_list_itemContent_title{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.content_list_itemContent_author{
+  margin-bottom: 10px;
+}
+.content_list_itemContent h3+a{
+  font-size: 12px;
+}
+.content_list{
+width: 964px;
+margin-left: auto;
+margin-right: auto;
+}
+.content_list_item{
+  float: left;
+  margin-left: 3px;
+  position: relative;
+}
+.content_list_item a i{
+
+  display: none;
+  background: url(../images/index/icon_play.png);
+  width: 48px;
+  height: 88px;
+  position: absolute;
+  left:100px;
+  top:75px;
+}
+
+.content_foot{
+  display: block;
+  width: 72px;
+  height: 26px;
+  padding:40px 0px;
+  clear: both;
+  position: relative;
+  padding-left:32px;
+  line-height: 24px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.content_foot >i{
+background: url(../images/index/more.png) no-repeat center;
+display:block;
+width:24px;
+height: 24px; 
+position: absolute;
+left: 0px;
+top: 39px;
+}
+.rank{
+  width: 100%;
+ 
+}
+.rank_rel{
+  width: 960px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+}
+.rank_rel_content{
+ 
+}
+.rank_rel_whiteBar{
+display: block;
+background-color: white;
+width: 2px;
+height: 250px;
+position: absolute;
+bottom: 0px;
+left: 478px;
+float: left;
+}
+.rank_rel_bar{
+height: 50px;
+position: relative;
+display: block;
+vertical-align: middle;
+}
+.rank_rel_bar_logo{
+  position: relative;
+  width: 90px;
+  top: 38px;
+}
+.rank_rel_bar_logo span{
+position: absolute;
+bottom: 0px;
+left: 32px;
+width:90px;
+}
+.rank_rel_bar_logo i{
+display: block;
+background: url(../images/index/icon_list.png);
+width: 30px;
+height: 29px;
+position: absolute;
+bottom: 0px;
+
+}
+.rank_rel_bar_date{
+display: inline;
+position: absolute;
+top: 16px;
+left: 98px;
+ }
+.rank_rel_bar_date li{
+  display: inline;
+  margin-left: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+ }
+ 
+.rank_rel_bar_more{
+  position: absolute;
+  right: 0px;
+  top: 18px;
+}
+.rank_rel_container{
+  width: 2880px;
+  position: absolute;
+  left: -960px;
+  top:50px;
+}
+.rank_rel_content_item{
+  width: 480px;
+  float: left;
+ 
+}
+.rank_rel_content_item_list_item{
+   padding: 0px 28px;
+  height: 50px;
+  vertical-align: center;
+}
+.rank_rel_content_item_list_item li{
+  opacity: 0.3;
+  filter:alpha(opacity=30);       /* IE */
+-moz-opacity:0.3;              /* 老版Mozilla */
+-khtml-opacity:0.3;              /* 老版Safari */
+}
+.rank_rel_content_item_list_item .single{
+
+}
+.rank_rel_content_item_list_item li{
+   float: left;
+   line-height: 50px;
+   overflow: hidden;
+ }
+
+ .rank_rel_content_item_list_item_num{
+  font-size: 26px;
+  color: white;
+  font-family: "微软雅黑";
+ }
+ .rank_rel_content_item_list_item_num{
+  margin-right: 30px;
+ }
+.rank_rel_content_item_list_item_title{
+  width: 197px;
+ }
+ .rank_rel_content_item_list_item_author{
+  width: 100px;
+ }
+
+ /*为i榜单定制的js样式*/
+ /*加在list-item*/
+.rank_single{
+background-color: #3b55a1;
+}
+.rank_main_no li{
+
+}
+.rank_main li{
+  filter:alpha(opacity=100);       /* IE */
+-moz-opacity:1;              /* 老版Mozilla */
+-khtml-opacity:1;              /* 老版Safari */
+  opacity: 1;
+transition: opacity 2s;
+-moz-transition: opacity 2s; /* Firefox 4 */
+-webkit-transition: opacity 2s; /* Safari 和 Chrome */
+-o-transition: opacity 2s; /* Opera */
+
+}
+/*加在rank_rel_bar_date*/
+.rank_rel_bar_date li.act{
+  border-left: solid white 1px;
+  border-right:solid white 1px;
+  color: #4d3636;
+ }
+ .recomend_title{
+  display: block;
+  
+   min-width: 192px;
+   margin: 40px auto;
+   text-align: center;
+ }
+ .recomend_gallery{
+  position: relative;
+  width: 870px;
+  height: 155px;
+  margin: 0 auto;
+  padding: 0 45px;
+ }
+.recomend_gallery_arrow_left{
+  display: block;
+  background:url(../images/index/icon_arrow_right.png);
+  width: 28px;
+  height: 48px;
+  position: absolute;
+  left: -120px;
+  top: 38px;
+}
+.recomend_gallery_arrow_right{
+   display: block;
+  background:url(../images/index/icon_arrow_left.png);
+  width: 28px;
+  height: 48px;
+  position: absolute;
+  right: -120px;
+  top: 38px;
+}
+/*滑动的接口*/
+.recomend_gallery_items{
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  width: 880px;
+  height: 200px;
+}
+.recomend_gallery_items_container{
+  position: absolute;
+  width: 50000px;/*需要设置自动增加长度*/
+  left: 0px;
+}
+.recomend_gallery_items li{
+  float: left;
+  margin-right: 10px;
+}
+

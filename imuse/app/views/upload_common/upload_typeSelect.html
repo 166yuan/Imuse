@@ -1,0 +1,31 @@
+#{extends 'upload_common/upload_index.html' /}
+		<form action="@{kingda.upload3}" name="myform" id ="myform" method="post">
+					<div class="content_center">
+						<div class="upload_content_center_item2 item_border_top">
+							<div class="upload_content_center_item2_center">
+								<a class="upload_content_center_item2_select type_select" alt="0" href="#">图文</a>
+								<a class="upload_content_center_item2_select" alt="1" href="#">音频</a>
+								<a class="upload_content_center_item2_select" alt="2" href="#">视频</a>
+							</div>
+							<input type="hidden" name="type" value="0" id = "upload_hidden"/>
+							<input type="hidden" name="title" value="${title}" id = "upload_title_hidden"/>
+							<button type="submit" class="content_center_item_next" id = "secend">下一步</button>
+							
+						</div>
+					</div>
+		</form>
+#{set 'moreScripts'}
+<script type="text/javascript">
+	//设置头的标题
+	$("#upload_content_top_name").text($("#upload_title_hidden").val());
+	$(".upload_content_top").removeClass("none");
+	$(".content_top li").eq(0).removeClass("hidden");
+	//设置效果
+	$('.upload_content_center_item2_select').click(function(event) {
+		$('.upload_content_center_item2_select').removeClass('type_select');
+		$(event.target).addClass('type_select');
+		var type = $('.type_select').first().attr('alt');
+		$('#upload_hidden').attr('value', type);
+	});
+</script>
+#{/set}

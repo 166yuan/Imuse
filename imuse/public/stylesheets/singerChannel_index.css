@@ -1,0 +1,97 @@
+.hidden{
+	visibility: hidden;
+}
+.channel-container {
+	background-color: #f0eae1;
+	text-align: center;
+	padding-bottom: 150px;
+font-family: "microsoft YaHei";
+}
+.channel-container h2{
+color:#4d3636;
+font-size: 26px;
+padding: 40px 0px;
+
+}
+.channel-content{
+	width: 960px;
+	margin: 0 auto;
+}
+.channel-content .tab{
+	display: block;
+	float: left;
+	padding: 10px 0px;
+	width: 50%;
+	color:#ad9999;
+	background-color: #e6ddcf;
+border-top: 3px solid white;
+}
+.channel-content .active{
+	background-color: #ded5c8;
+	border-top: 3px solid #3b55a1;
+}
+.singersList li:first-child{
+	width: 380px;
+	height: 380px;
+}
+
+.singersListItem{
+	float: left;
+	width: 188px;
+	height: 188px;
+	position: relative;
+	margin-right: 4px;
+	margin-top: 4px;
+}
+.singersListItem:hover .item-introduce{
+	visibility: visible;
+}
+.singersListItem img{
+	width: 100%;
+	height: 100%;
+}
+.item-introduce{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 340px;
+	height: 188px;
+	text-align: left;
+	padding: 0px 20px;
+	z-index: 1;
+	color: white;
+}
+.item-introduce h3{
+	padding:20px 0;
+}
+.item-introduce .center{
+	height: 80px;
+	line-height: 24px;
+	font-size: 12px;
+}
+.item-introduce .tag{
+	padding: 20px 0;
+	font-weight: 600;
+}
+.item-introduce-clothes{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #4f547d;
+	width: 380px;
+	height: 188px;
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	z-index: -1;
+}
+.clearFix:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	clear:both;
+}
+.footer{
+	margin-top: 0px;
+}

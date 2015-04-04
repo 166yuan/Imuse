@@ -1,0 +1,60 @@
+#{extends 'upload_common/upload_index.html' /}
+<form action="@{Ideas.addIdea}" name="myform" id ="myform" method="post"  enctype="multipart/form-data">
+		<div class="content_center" style="position:relative;">
+			<!-- one item 要显示请去掉none-->
+			<div class="upload_content_center_item4 item_border_top">
+				<a class="upload_content_center_item2_select"  href="#" id="selcectsong">选择歌曲</a>
+				<a class="upload_content_center_item2_select"  href="#" id="selcectlrc">选择歌词</a>
+				<a class="upload_content_center_item2_select des_name"  href="#" >歌曲:<span id="label_song"</span></a>
+				<a class="upload_content_center_item2_select des_name" style="bottom:60px" href="#" >歌词:<span id="label_lrc"></span></a>
+				<a href="#" style="clear:both;margin-top:200px;" class="content_center_item_next" id="third_track">下一步</a>
+				<input class="none" type="file" name="song" value=""  id ="songinput"/>
+				<input class="none" type="file" name="lrc" value=""  id ="lrcinput"/>
+				<input type="hidden" name = "title" value ="${title}"/>
+				<input type="hidden" name = "type" value ="${type}"/>
+			</div>
+		</div>
+</form>
+#{set 'moreScripts'}
+<script type="text/javascript">
+	$(".upload_content_top").removeClass("none");
+	$("#upload_content_top_name").text($("#title").val());
+	$(".content_top_item").eq(1).removeClass("hidden").children("h1").eq(1).text("音频");
+	$('#selcectsong').click(function(){
+		$('#songinput').trigger("click").change(function(){
+			var files = document.getElementById("songinput").files;
+			var fileName = files[0].name;
+			$("#label_song").text(fileName);
+		});
+	});
+
+	$('#selcectlrc').click(function(){
+		$('#lrcinput').trigger("click").change(function(){
+			var files = document.getElementById("lrcinput").files;
+			var fileName = files[0].name;
+			$("#label_lrc").text(fileName);
+		});
+	});
+
+
+	$("#third_track").click(function(){
+		var songinput = document.getElementById("songinput");
+		var lrcinput = document.getElementById("lrcinput");
+		if(songinput.value.length==0){
+			alert("歌曲还未选择");
+			return false;
+		}
+		if(lrcinput.value.length==0){
+			alert("歌词还未选择");
+			return false;
+		}
+
+		$("#myform").submit();
+	})
+
+
+</script>
+#{/set}
+
+
+

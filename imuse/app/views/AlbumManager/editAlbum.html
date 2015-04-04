@@ -1,0 +1,39 @@
+#{extends 'mana-main.html' /} #{set title:'修改专辑' /}
+#{set 'moreScripts'}
+<script type="text/javascript" src = "@{'/public/javascripts/editshow.js'}"></script>
+#{/set}
+<div class="container-fluid">
+ 	
+ 	<div class="hero-unit">
+		<form role="form" action="@{AlbumManager.updataAlbum(albumId,name,copyright,author,note)}" method="post" enctype="multipart/form-data">
+   <div class="form-group" >
+   	<input type="hidden" value="${album.id}" name="albumId">
+#{if album.imageUrl !=null}
+			 	<img class="img-circle" src="${album.imageUrl}" style="width: 120px; height: 120px;">
+                #{/if}
+                #{else}
+                <img class="img-circle" src="/public/images/album_sample.png" style="width: 120px; height: 120px;">
+                #{/else}       
+      <label for="name">专辑名称  :  ${album.name}</label>
+      <input type="text" class="prehidden" name="name" 
+         placeholder="请输入新名称">
+         <label for="name">作者信息  :  ${album.author}</label>
+      <input type="text" class="prehidden" name="author" 
+         placeholder="输入新作者">
+         <label for="name">版权信息   :  ${album.copyright}</label>
+       <input type="text" class="prehidden" name="copyright" 
+         placeholder="输入新版权信息">
+         <label for="name">备注   :  ${album.note}</label>
+          <input type="text" class="prehidden" name="note" 
+         placeholder="输入新备注">
+   <div class="prehidden">
+      <label for="inputfile">修改专辑图片</label>
+      <input type="file" id="inputfile" name="f">
+      <p class="help-block">选择专辑图片</p>
+   </div>
+   <a  class="btn btn-success" id="showEdit" role="button">修改 </a>
+   <button type="submit" class="btn btn-primary">保存</button>
+</form>
+</div>
+
+</div>

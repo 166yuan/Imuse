@@ -1,0 +1,18 @@
+#{extends 'index_common/index_main.html' /}
+#{set title:'music_channel' /}
+#{set 'moreStyles'}
+
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/index.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/singer_songs.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/singer_ablum.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/singer.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/banner.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/musicChannel_index.css'}">
+#{/set}
+#{set 'moreScripts'}
+ <script src="@{'/public/javascripts/banner.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+  <script type="text/javascript">
+$(document).trigger("banner");
+ </script>
+ #{/set}
+ #{include 'Channel_common/musicChannel_common/musicChannel_container.html'/}

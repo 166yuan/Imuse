@@ -1,0 +1,53 @@
+#{extends 'mana-main.html' /}
+#{set title:'Home' /}
+#{set addUserPageActive:'active' /}
+
+<div class="row-fluid">
+
+	#{include 'Users/nav.html' /}
+	<div class="span9">
+		<form action="@{Users.add}" class="form-horizontal">
+			<div class="control-group">
+				<label class="control-label" for="inputEmail">邮箱</label>
+				<div class="controls">
+					<input type="text" id="inputEmail" placeholder="Email" name="email">
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="inputPassword">密码</label>
+				<div class="controls">
+					<input type="password" id="inputPassword" placeholder="Password"
+						name="passwd">
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="inputEmail">昵称</label>
+				<div class="controls">
+					<input type="text" id="inputEmail" placeholder="Email" name="nickname">
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="inputEmail">简介</label>
+				<div class="controls">
+					<input type="text" id="inputEmail" placeholder="Email" name="intro">
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="inputPassword">角色</label>
+				<div class="controls">
+					<select name="role">
+						<option value="0">普通用户</option>
+						<option value="1">歌手</option>
+					</select>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<button type="submit" class="btn">添加</button>
+				</div>
+			</div>
+		</form>
+
+	</div>
+	<!--/span-->
+</div>

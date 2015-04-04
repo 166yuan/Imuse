@@ -1,0 +1,146 @@
+	#{extends 'Common/index_main.html' /}
+    #{include 'index_common/banner.html'/}
+    #{set 'moreStyles'}
+    <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/index.css'}">
+    <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/banner.css'}">
+    <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/ranklist.css'}">
+	#{/set}
+    #{set 'moreScripts'}
+    <!-- 加载tpl start -->
+    #{output 'Ranklist/ranklist_tpl.html'/}
+	#{output 'index_common/banner_tpl.html'/}
+	<!-- 加载tpl end -->
+   	<script type="text/javascript" src = "@{'/public/javascripts/juicer.js'}"></script>
+   	<!-- 页面效果增强js start -->
+    <script src="@{'/public/javascripts/banner.js'}" type="text/javascript"></script>
+    <script src="@{'/public/javascripts/bg_change.js'}" type="text/javascript" ></script>
+    <script src="@{'/public/javascripts/bg_changeOddRow.js'}" type="text/javascript"></script>
+    <script src="@{'/public/javascripts/bg_cutString.js'}" type="text/javascript"></script>
+    <!-- 页面效果增强js start -->
+    <!-- ajax start -->
+    #{include 'Common/golBal.html'/}
+    <script src="@{'/public/javascripts/rankList_getData.js'}" type="text/javascript"></script>
+	<script src="@{'/public/javascripts/banner_getData.js'}" type="text/javascript"></script>
+    <!-- ajax end -->
+    #{/set}
+     <div class="container">
+        <div class="content">
+            <div id="bg_container">
+              <div id="bg_title_div" align="center">i榜单</div>
+              <div id="bg_tabs">
+                  <ul id="bg_tab_ul">
+                      <li class="bg_tab" onclick="bg_change(this)">
+                        <a href="javascript:void(0)" class="bg_tab_a">日/day</a>
+                      </li>
+                      <li class="bg_tab" onclick="bg_change(this)">
+                        <a href="javascript:void(0)" class="bg_tab_a">周/week</a>
+                      </li>
+                      <li class="bg_tab" onclick="bg_change(this)">
+                        <a href="javascript:void(0)" class="bg_tab_a">月/month</a>
+                      </li>
+                  </ul>
+                  <!-- end bg_tab_ul -->
+              </div>
+              <!-- end bg_tab -->
+              <div id="bg_list" style="left:0px;">
+                  <div id="bg_daylist_div">
+                      <ul class="bg_list_ul">
+                        <li id="bg_list_head" class="odd">
+                          <img src="@{'/public/images/ranklist_index/icon_list.png'}" alt="icon_list" id="bg_icon_pic">
+                          <span id="bg_icon_introduction">
+                            <img src="@{'/public/images/ranklist_index/icon_introduction.png'}" alt="icon_introduction">
+                          </span>
+                        </li>
+                        
+         
+
+                      </ul>         
+                  </div>
+                  <div id="bg_weeklist_div">
+                      <ul class="bg_list_ul">
+                      <li id="bg_list_head" class="odd">
+                        <img src="@{'/public/images/ranklist_index/icon_list.png'}" alt="icon_list" id="bg_icon_pic">
+                        <span id="bg_icon_introduction">
+                          <img src="@{'/public/images/ranklist_index/icon_introduction.png'}" alt="icon_introduction">
+                        </span>
+                      </li>
+                      
+                  
+
+                      </ul>         
+                  </div>
+                  <div id="bg_monthlist_div">
+                      <ul class="bg_list_ul">
+                      <li id="bg_list_head" class="odd">
+                        <img src="@{'/public/images/ranklist_index/icon_list.png'}" alt="icon_list" id="bg_icon_pic">
+                        <span id="bg_icon_introduction">
+                          <img src="@{'/public/images/ranklist_index/icon_introduction.png'}" alt="icon_introduction">
+                        </span>
+                      </li>
+                      
+                   
+
+                      </ul>         
+                  </div>
+              </div>
+              <!-- end bg_list -->
+            </div>
+            <!--end bg_container-->
+            <div id="divide_line"></div>
+              <div id="bg_end_content">
+                <h2 class="content_title">你可能会喜欢</h2>
+    	            <ul class="content_list">
+    		             <li class="content_list_item">
+      		              <a href="#">
+                          <img src="@{'/public/images/index/content_list_picture.png'}"/>
+                        </a>
+    		                <div class="content_list_itemContent">
+    		                    <h3>专辑：<a href="#">谁是陈奂仁</a></h3>
+    		                <p class="content_list_itemContent_title"><a href="#">没时间后悔</a></p>
+    		                <p class="content_list_itemContent_author"><a href="#">陈焕仁</a></p>
+    		                <p class="content_list_itemContent_time">上线:2012年6月12日</p>
+    		                </div>
+    		              </li>
+      		            <li class="content_list_item">
+        		              <a href="#">
+                            <img src="@{'/public/images/index/content_list_picture.png'}"/>
+                          </a>
+      		                <div class="content_list_itemContent">
+      		                    <h3>专辑：<a href="#">谁是陈奂仁</a></h3>
+      		                <p class="content_list_itemContent_title"><a href="#">没时间后悔</a></p>
+      		                <p class="content_list_itemContent_author"><a href="#">陈焕仁</a></p>
+      		                <p class="content_list_itemContent_time">上线:2012年6月12日</p>
+      		                </div>
+      		            </li>
+      		            <li class="content_list_item">
+        		              <a href="#">
+                            <img src="@{'/public/images/index/content_list_picture.png'}"/>
+                          </a>
+      		                <div class="content_list_itemContent">
+      		                    <h3>专辑：<a href="#">谁是陈奂仁</a></h3>
+      		                <p class="content_list_itemContent_title"><a href="#">没时间后悔</a></p>
+      		                <p class="content_list_itemContent_author"><a href="#">陈焕仁</a></p>
+      		                <p class="content_list_itemContent_time">上线:2012年6月12日</p>
+      		                </div>
+      		            </li>
+      		            <li class="content_list_item">
+        		              <a href="#">
+                            <img src="@{'/public/images/index/content_list_picture.png'}"/>
+                          </a>
+      		                <div class="content_list_itemContent">
+      		                    <h3>专辑：<a href="#">谁是陈奂仁</a></h3>
+      		                <p class="content_list_itemContent_title"><a href="#">没时间后悔</a></p>
+      		                <p class="content_list_itemContent_author"><a href="#">陈焕仁</a></p>
+      		                <p class="content_list_itemContent_time">上线:2012年6月12日</p>
+      		                </div>
+      		            </li>
+    		            <!-- end content_list_item -->
+    	            </ul>
+                <!-- end content_list -->
+              </div>
+              <!-- end content_list -->
+        </div>
+        <!-- end content -->
+
+</body>
+</html>

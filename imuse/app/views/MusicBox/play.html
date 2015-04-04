@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iMuse | 用户登录</title>
+	<link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/font-awesome.min.css'}">
+	<script src="@{'/public/javascripts/jquery-1.7.1.min.js'}"></script>
+	<script src="@{'/public/javascripts/audio.min.js'}"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="header-inner">iMuse音乐播放器</div>
+		<!-- <audio src="/res/sound.ogg" preload="auto" /> -->
+	</div>
+	<div class="main-content">
+		<div class="song-list-panel">
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>歌曲(2)</th>
+						<th>演唱者</th>
+						<th>专辑</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<input type="checkbox"></td>
+						<td>Let Her Go</td>
+						<td>Passenger</td>
+						<td>All The Little Lights</td>
+						<td>
+							<a href="#"> <i class="fa fa-heart-o fa-1x"></i>
+							</a>
+						</td>
+					</tr>
+					<tr class="selected">
+						<td>
+							<input type="checkbox"></td>
+						<td>Let Her Go</td>
+						<td>Passenger</td>
+						<td>All The Little Lights</td>
+						<td>
+							<a href="#"> <i class="fa fa-heart fa-1x"></i>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox"></td>
+						<td>Let Her Go</td>
+						<td>Passenger</td>
+						<td>All The Little Lights</td>
+						<td>
+							<a href="#">
+								<i class="fa fa-heart-o fa-1x"></i>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox"></td>
+						<td>Let Her Go</td>
+						<td>Passenger</td>
+						<td>All The Little Lights</td>
+						<td>
+							<a href="#">
+								<i class="fa fa-heart-o fa-1x"></i>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox"></td>
+						<td>Let Her Go</td>
+						<td>Passenger</td>
+						<td>All The Little Lights</td>
+						<td>
+							<a href="#">
+								<i class="fa fa-heart-o fa-1x"></i>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox"></td>
+						<td>Let Her Go</td>
+						<td>Passenger</td>
+						<td>All The Little Lights</td>
+						<td>
+							<a href="#">
+								<i class="fa fa-heart-o fa-1x"></i>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox"></td>
+						<td>Let Her Go</td>
+						<td>Passenger</td>
+						<td>All The Little Lights</td>
+						<td>
+							<a href="#">
+								<i class="fa fa-heart-o fa-1x"></i>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox"></td>
+						<td>Let Her Go</td>
+						<td>Passenger</td>
+						<td>All The Little Lights</td>
+						<td>
+							<a href="#">
+								<i class="fa fa-heart-o fa-1x"></i>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox"></td>
+						<td>Let Her Go</td>
+						<td>Passenger</td>
+						<td>All The Little Lights</td>
+						<td>
+							<a href="#">
+								<i class="fa fa-heart-o fa-1x"></i>
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="song-word-panel">
+			<div class="album">
+				<img src="@{'/public/images/album.jpg'}" alt="HEIDI HAPPY"></div>
+			<div class="song-word">
+				<h4>文本歌词</h4>
+				<p>
+					Watching the flowers grow,<br />
+					Still waiting for spring in my heart.<br/>
+					Too bad, I didn’t know<br/>
+					That I picked those flowers way too<br/> 
+					early,<br/>
+					Ooh ooh...
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<!-- <audio src="/res/sound.ogg" preload="auto" /> -->
+		<input type="hidden" id="PauseTime" />
+		<div class="music-box">
+			<div class="play-control">
+				<div class="left-control control-btn">
+					<a href="#">
+						<i class="fa fa-backward fa-1x"></i>
+					</a>
+				</div>
+				<div class="main-control control-btn">
+					<a href="#">
+						<i class="fa fa-play fa-1x"></i>
+					</a>
+				</div>
+				<div class="right-control control-btn">
+					<a href="#">
+						<i class="fa fa-forward fa-1x"></i>
+					</a>
+				</div>
+			</div>
+			<div class="sound-control">
+				<div class="left-control control-btn">
+					<a href="#">
+						<i class="fa fa-volume-up fa-1x"></i>
+					</a>
+				</div>
+			</div>
+			<div class="process-control">
+				<div class="process-top">
+					<div class="process-top-left">
+						<span class="song-name">Wings you are the hero - Kotaro Oshio</span>
+					</div>
+					<div class="process-top-right">
+						<!-- <div class="song-heart">
+						<a href="#">
+							<i class="fa fa-heart fa-1x"></i>
+						</a>
+					</div>
+					-->
+					<div class="song-time">00:00&nbsp;-&nbsp;03:57</div>
+				</div>
+			</div>
+			<div class="process-bottom">
+				<div class="process"></div>
+				<div class="process-yet"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div><h2>sdsdasdasdasdasd</h2>
+	<ul>
+		#{list items:trackList,as: 'track'}
+			#{if track_index%3 == 1}
+				${track.author}
+			#{/if}
+			#{else}
+				hehe
+			#{/else}
+		#{/list}
+	</ul>
+</div>
+<script>
+	  audiojs.events.ready(function() {
+	    var as = audiojs.createAll();
+	  });
+	</script>
+</body>
+</html>
